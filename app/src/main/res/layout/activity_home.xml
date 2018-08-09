@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <!--    <HorizontalScrollView
+           android:id="@+id/horizontalscrollview"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:scrollbars="none"
+            >
+
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:background="@android:color/white">
+
+               <Button
+                   android:id="@+id/btn_dashboard"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+
+                   android:background="@drawable/ic_tab_dashboard" />
+
+               changes made on 16/7/15
+               <Button
+                   android:id="@+id/btn_profile"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:visibility="gone"
+                   android:background="@drawable/ic_tab_profile"/>
+
+                changes made on 16/7/15
+               <Button
+                   android:id="@+id/btn_addresses"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:visibility="visible"
+                   android:background="@drawable/order" />
+
+                changes made on 16/7/15
+               <Button
+                   android:id="@+id/btn_contact"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:visibility="gone"
+                   android:background="@drawable/ic_tab_contact" />
+
+               <Button
+                   android:id="@+id/btn_tour_trip"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                  android:background="@drawable/ic_tourtip_blue"
+                   />
+                 <Button
+                     android:id="@+id/btn_edit_profile"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Button 6"
+                   android:visibility="gone"/>
+                   <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Button6"
+                   android:visibility="gone"/>
+                     <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Button7"
+                   android:visibility="gone"/>
+                       <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Button8"
+                   android:visibility="gone"/>
+                         <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Button9"
+                   android:visibility="gone"/>
+                           <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Button10"
+                   android:visibility="gone" />
+
+                             <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Button11"
+                   android:visibility="gone" />
+
+                             <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Button12"
+                   android:visibility="gone" />
+                     <Button
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Button13"
+                   android:visibility="gone"/>
+
+
+           </LinearLayout>
+       </HorizontalScrollView> -->
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:weightSum="480">
+
+
+        <LinearLayout
+            android:id="@+id/btn_dashboard_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="160"
+            android:gravity="center"
+
+
+            >
+
+
+            <Button
+                android:id="@+id/btn_dashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignLeft="@+id/btn_addresses"
+                android:layout_alignParentLeft="true" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btn_addresses_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="160"
+            android:gravity="center"
+
+
+            >
+
+
+            <Button
+                android:id="@+id/btn_addresses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llayout_user_id"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="160"
+            android:gravity="center"
+
+
+            >
+
+
+            <TextView
+                android:id="@+id/textview_user_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="9718814334"
+                android:textColor="@color/header_background"
+                android:textSize="@dimen/default_running_text_size" />
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/btn_tour_trip_layout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="160"
+            android:gravity="center"
+
+            android:visibility="gone">
+
+
+            <Button
+                android:id="@+id/btn_tour_trip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentRight="true"
+
+                />
+
+        </LinearLayout>
+
+        <!--Button for order dispatch-->
+        <LinearLayout
+            android:id="@+id/btn_order_dispatch"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="120"
+            android:gravity="center"
+            android:visibility="gone">
+
+
+            <Button
+                android:id="@+id/btn_edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_alignParentRight="true"
+
+                />
+
+        </LinearLayout>
+
+        <!--btn_addresses worked as order managemnet-->
+        <!--
+
+
+
+
+     -->
+
+
+        <Button
+            android:id="@+id/btn_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btn_edit_profile1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button 6"
+            android:visibility="gone" />
+
+        <!-- changes made on 16/7/15 -->
+        <Button
+            android:id="@+id/btn_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/text_color_dark_gray" />
+
+
+    <FrameLayout
+        android:id="@+id/flayout"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+
+
+        />
+
+</LinearLayout>

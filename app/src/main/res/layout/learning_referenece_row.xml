@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_10"
+    android:layout_marginLeft="40dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/learning_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Developing Your Learning Skills"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:textColor="@color/drawerBottomTextcolor"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:id="@+id/learning_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginTop="10dp"
+        android:background="@color/divider_bg" />
+
+</LinearLayout>

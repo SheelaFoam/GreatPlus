@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_crl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <include
+            android:id="@+id/common_toolbar"
+            layout="@layout/home_toolbar">
+
+        </include>
+
+        <android.support.v4.widget.DrawerLayout
+            android:id="@+id/drawer"
+            android:background="@drawable/ripple_effect"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/common_toolbar"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <FrameLayout
+                    android:id="@+id/fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+
+            </RelativeLayout>
+
+            <android.support.design.widget.NavigationView
+                android:id="@+id/navigation_left"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:background="#fff"
+                app:itemIconTint="@color/white"
+                app:itemTextColor="@color/white">
+
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include
+                            android:id="@+id/common_toolbar"
+                            layout="@layout/common_toolbar" />
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/navigation_view_top"
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="0dp"
+                            android:background="@color/white"
+                            app:itemIconTint="@color/white"
+                            app:itemTextColor="@color/white" />
+
+                        <LinearLayout
+                            android:id="@+id/linear"
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:layout_below="@+id/navigation_view_top"
+                            android:background="@color/white"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginLeft="20dp"
+                                android:background="@color/divider_bg" />
+
+                            <RelativeLayout
+                                android:id="@+id/expandlayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:orientation="horizontal"
+                                android:visibility="visible">
+
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginLeft="20dp"-->
+                                    <!--android:text="More Apps"-->
+                                    <!--android:textColor="@color/drawerTopTextcolor"-->
+                                    <!--android:textSize="18sp"-->
+                                    <!--android:textStyle="bold" />-->
+
+                                <!--<ImageView-->
+                                    <!--android:id="@+id/expand_list"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_alignParentRight="true"-->
+                                    <!--android:layout_marginRight="@dimen/margin_20"-->
+                                    <!--android:background="@drawable/minus" />-->
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/collapselayout"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:orientation="horizontal"
+                                android:visibility="gone">
+
+                                <!--<TextView-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_marginLeft="20dp"-->
+                                    <!--android:text="More Apps"-->
+                                    <!--android:textColor="@color/drawerTopTextcolor"-->
+                                    <!--android:textSize="18sp"-->
+                                    <!--android:textStyle="bold" />-->
+
+                                <!--<ImageView-->
+                                    <!--android:id="@+id/collapse_list"-->
+                                    <!--android:layout_width="wrap_content"-->
+                                    <!--android:layout_height="wrap_content"-->
+                                    <!--android:layout_alignParentRight="true"-->
+                                    <!--android:layout_marginRight="@dimen/margin_20"-->
+                                    <!--android:background="@drawable/plus" />-->
+                            </RelativeLayout>
+                            <!-- <android.support.v7.widget.RecyclerView
+                                 android:id="@+id/navigation_view_bottom"
+                                 android:layout_width="320dp"
+                                 android:layout_height="wrap_content"
+                                 android:layout_marginBottom="10dp"
+                                 app:itemIconTint="@color/white"
+                                 app:itemTextColor="@color/white" />-->
+
+                            <ListView
+                                android:id="@+id/listView1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:divider="@null"
+                                android:visibility="visible">
+
+                            </ListView>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="2dp"
+                                android:layout_marginTop="@dimen/margin_20"
+                                android:background="@color/light_grey_bg" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/layout_sathi_menu"
+                            android:gravity="center"
+                            android:visibility="gone"
+                            android:orientation="vertical"
+                            android:layout_below="@+id/linear"
+                            android:layout_marginTop="@dimen/margin_5">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:textSize="@dimen/big_text_size"
+                                android:descendantFocusability="blocksDescendants"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="25dp"
+                                android:text="Scan"
+                                android:textColor="@color/colorPrimary" />
+
+                            <TextView
+                                android:id="@+id/home_divider"
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/linear_layout"
+                                android:paddingLeft="25dp"
+                                android:background="@color/divider_bg" />
+
+
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginBottom="@dimen/margin_20"-->
+                                <!--android:layout_marginLeft="@dimen/margin_20"-->
+                                <!--android:layout_marginTop="@dimen/margin_10"-->
+                                <!--android:text="Scan"-->
+                                <!--android:textColor="@android:color/black"-->
+                                <!--android:textSize="18sp"-->
+                                <!--android:textStyle="bold" />-->
+
+                        </LinearLayout>
+
+
+
+
+                        <LinearLayout
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/layout_support"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:layout_below="@+id/layout_sathi_menu"
+                            android:layout_marginTop="@dimen/margin_5">
+
+                            <TextView
+                                android:id="@+id/tv_consumerOrder"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:textSize="@dimen/big_text_size"
+                                android:descendantFocusability="blocksDescendants"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="25dp"
+                                android:visibility="gone"
+                                android:text="Pre Invoice Cash Reward"
+                                android:textColor="@color/colorPrimary" />
+
+                            <TextView
+
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/linear_layout"
+                                android:paddingLeft="25dp"
+                                android:visibility="gone"
+                                android:background="@color/divider_bg" />
+
+                            <TextView
+                                android:id="@+id/help_support"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:textSize="@dimen/big_text_size"
+                                android:descendantFocusability="blocksDescendants"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="25dp"
+                                android:text="Help &amp; Support"
+                                android:textColor="@color/colorPrimary" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_below="@+id/linear_layout"
+                                android:paddingLeft="25dp"
+                                android:background="@color/divider_bg" />
+
+
+
+                            <!--<TextView-->
+                                <!--android:layout_width="match_parent"-->
+                                <!--android:layout_height="wrap_content"-->
+                                <!--android:layout_marginBottom="@dimen/margin_20"-->
+                                <!--android:layout_marginLeft="@dimen/margin_20"-->
+                                <!--android:layout_marginTop="@dimen/margin_10"-->
+                                <!--android:text="Support"-->
+                                <!--android:textColor="@android:color/black"-->
+                                <!--android:textSize="18sp"-->
+                                <!--android:textStyle="bold" />-->
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/log_out_linear"
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_support"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:background="@color/white"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_20"
+                                android:layout_marginLeft="@dimen/margin_20"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:background="@drawable/logout" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_20"
+                                android:layout_marginLeft="@dimen/margin_20"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:text="Log Out"
+                                android:textColor="@android:color/black"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </RelativeLayout>
+                </ScrollView>
+            </android.support.design.widget.NavigationView>
+
+        </android.support.v4.widget.DrawerLayout>
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

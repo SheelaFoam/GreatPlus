@@ -1,0 +1,108 @@
+<resources>
+
+    <!--
+         Example customization of dimensions originally defined in res/values/dimens.xml
+         (such as screen margins) for screens with more than 820dp of available width. This
+         would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
+    -->
+    
+
+
+ <dimen name="default_container_layout_padding">14px</dimen>
+     <dimen name="default_title_text_size">42px</dimen>
+     
+     
+     <dimen name="default_title_text_size_extra">54px</dimen>
+    
+    
+    <!-- <activity_login> -->
+    
+    
+    <dimen name="login_body_padding">120px</dimen>
+    <dimen name="default_running_text_size">36px</dimen>
+    
+    <dimen name="default_running_text_size_small">27px</dimen>
+    
+    
+    
+    <dimen name="default_value_edit_text_margine_from_up">15px</dimen>
+    <dimen name="default_layout_margine_from_up">27px</dimen>
+    <dimen name="default_inner_text_padding_very_small">15px</dimen>
+    <dimen name="login_btn_layout_margine_from_up">54px</dimen>
+    
+    
+    <!-- <activity_dashboard> -->
+    
+    <dimen name="kpi_percent_text_size">75px</dimen>
+    <dimen name="kpi_name_text_size">36px</dimen>
+    <dimen name="kpi_three_bottom_text_size">30px</dimen>
+    <dimen name="noticeboard_title_text_size">26px</dimen>
+    <dimen name="kpi_board_width">341px</dimen>
+    
+    <dimen name="kpi_board_height">480px</dimen>
+    
+    <!-- <header> -->
+          
+          <dimen name="info_button_margine_right">30px</dimen>
+          <dimen name="info_button_margine_top">6px</dimen>
+          
+          
+   <!-- <changepassword> -->
+   
+   <dimen name="body_layout_margine_left">75px</dimen>
+   <dimen name="btn_save_layout_margine_top">75px</dimen>
+   
+     <!-- <profile> -->
+   
+   <dimen name="default_text_size_small_very_extra_extra">6px</dimen>
+   <dimen name="lable_profile_user_name_text_size">53px</dimen>
+   <dimen name="lable_employ_type_margine_top">8px</dimen>
+   <dimen name="scroll_view_margine_bottom">135px</dimen>
+   <dimen name="profile_imageview_size">270px</dimen>
+   
+     <!-- <address book> -->
+     
+     <dimen name="leble_bottom_distributor_size">32px</dimen>
+     <dimen name="lable_botton_text_size">30px</dimen>
+     <dimen name="listview_margine_bottom">90px</dimen>
+     <dimen name="emp_type_lable_margine_left">18px</dimen>
+     <dimen name="rlayout_emp_name_margine_top">27px</dimen>
+     
+     
+      <!-- <contact> -->
+     <dimen name="llayout_margine_top">45px</dimen>
+     
+      <dimen name="profile_img_width">210px</dimen>
+      <dimen name="profile_img_height">233px</dimen>
+      
+      
+      <dimen name="tour_trip_profile_img_width">75px</dimen>
+       <dimen name="tour_trip_profile_img_height">75px</dimen>
+           
+           
+            <dimen name="llayout_margine_top_small_very_very">5px</dimen>
+            <dimen name="calender_item_cell_height">99px</dimen>
+            <dimen name="calender_item_cell_width">99px</dimen>
+            
+             <dimen name="calender_item_cell_height_small">80px</dimen>
+            <dimen name="calender_item_cell_width_small">80px</dimen>
+            
+          <dimen name="input_height">75px</dimen>
+           <dimen name="input_width">75px</dimen>
+           
+           
+           
+            <dimen name="dcr_list_height">627px</dimen>
+           
+             <dimen name="dtp_list_height">345px</dimen>
+             
+             
+             <dimen name="dcr_map_height">777px</dimen>
+             
+             <dimen name="product_order_text_field_width">315px</dimen>
+             <dimen name="product_order_form_container_width">618px</dimen>
+
+          <dimen name="report_text_size">26dp</dimen>
+
+
+</resources>

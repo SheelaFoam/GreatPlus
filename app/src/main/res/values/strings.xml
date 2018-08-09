@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">"Greatplus"</string>
+
+    <string name="openDrawer">open</string>
+    <string name="closeDrawer">close</string>
+    <string-array name="records">
+        <item>All</item>
+        <item>5</item>
+        <item>10</item>
+        <item>25</item>
+        <item>100</item>
+    </string-array>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- <Default alerts and msg> -->
+
+    <string name="default_upload_image_fail_msg" translatable="false">image Not uploaded successfully</string>
+    <string name="default_network_alert_msg" translatable="false">Network error</string>
+    <string name="default_password_length_msg" translatable="false">password length must between 4 to 12</string>
+    <string name="default_mandotry_fields_msg" translatable="false">Please fill all mandatory fields</string>
+    <string name="default_password_not_same_msg" translatable="false">New password and retype password are not same</string>
+    <string name="default_no_data_found_alert_msg" translatable="false">No data found</string>
+    <string name="default_valid_email_alert_msg" translatable="false">Please enter valid email id</string>
+    <string name="default_no_value" translatable="false">N/A</string>
+
+    <!-- <Login UI> -->
+
+    <string name="login_username_lable" translatable="false">Username:</string>
+    <string name="old_password_lable" translatable="false">Old Password:</string>
+    <string name="new_password_lable" translatable="false">New Password:</string>
+    <string name="confirm_password_lable" translatable="false">Confirm Password:</string>
+    <string name="login_password_lable" translatable="false">Password:</string>
+    <string name="login_login_btn_lable" translatable="false">LOGIN</string>
+    <string name="lightning" translatable="false">Natural Lightning</string>
+    <string name="color_baloons" translatable="false">Color Baloons</string>
+    <string name="natural_wall" translatable="false">Natural Wall</string>
+
+    <!-- <Dashboard> -->
+
+    <string name="lable_noticebord_header" translatable="false">NOTICEBOARD</string>
+
+    <!-- <Change Password> -->
+
+    <string name="lable_old_password" translatable="false">Old Password:</string>
+    <string name="lable_new_password" translatable="false">New Password:</string>
+    <string name="lable_retype_password" translatable="false">Retype Password:</string>
+    <string name="change_password" translatable="false">Change Password</string>
+
+    <!-- <Contact> -->
+
+    <string name="lable_timing" translatable="false">Timing:</string>
+    <string name="lable_tollfree_no" translatable="false">Toll Free Number:</string>
+    <string name="lable_cc_email" translatable="false">Customer Care Email:</string>
+    <string name="lable_cc_direct_number" translatable="false">Customer Care Direct Number:</string>
+    <string name="lable_helpline" translatable="false">24x7 Helpline</string>
+    <string name="lable_tollfree_no_it" translatable="false">Toll Free Number (IT Support)-</string>
+    <string name="lable_cc_direct_number_it" translatable="false">Direct Number (IT Support)-</string>
+
+    <!-- <profile> -->
+
+    <string name="profile_texview_mobile_lable" translatable="false">Mobile Number:</string>
+    <string name="profile_texview_email_lable" translatable="false">Email:</string>
+    <string name="profile_texview_landline_lable" translatable="false">Landline:</string>
+    <string name="profile_texview_address_lable" translatable="false">Address:</string>
+    <string name="profile_texview_pincode_lable" translatable="false">PIN Code:</string>
+    <string name="profile_texview_country_lable" translatable="false">Country:</string>
+
+    <!-- <edit profile> -->
+
+    <string name="edit_profile_texview_mobile_lable" translatable="false">Mobile</string>
+    <string name="edit_profile_texview_email_lable" translatable="false">Email</string>
+    <string name="edit_profile_texview_landline_lable" translatable="false">Landline</string>
+    <string name="edit_profile_texview_address_lable" translatable="false">Address</string>
+    <string name="edit_profile_texview_pincode_lable" translatable="false">Pincode</string>
+    <string name="edit_profile_texview_country_lable" translatable="false">Country</string>
+    <string name="edit_profile_texview_dob_lable" translatable="false">Date of birth</string>
+
+    <!-- post order -->
+    <string name="textview_dealer_name" translatable="false">Dealer Name</string>
+    <string name="textview_supply_from" translatable="false">Supply From</string>
+    <string name="dealer_type" translatable="false">Dealer Type</string>
+    <string name="btn_order_submit" translatable="false">Submit</string>
+    <string name="textview_product_list" translatable="false">Product Name</string>
+    <string name="gsb_type" translatable="false">Select GSB Type</string>
+    <string name="textview_UOM" translatable="false">UOM</string>
+    <string name="textview_radio_uom_inches" translatable="false"> Inches</string>
+    <string name="textview_radio_uom_mm" translatable="false">Mm</string>
+    <string name="textview_product_length" translatable="false">L</string>
+    <string name="textview_product_width" translatable="false">W</string>
+    <string name="textview_product_thickness" translatable="false">T</string>
+    <string name="textview_product_remark" translatable="false">Remark</string>
+    <string name="textview_customer_name" translatable="false">Customer Name</string>
+    <string name="textview_customer_mobile" translatable="false">Mobile No.</string>
+    <string name="textview_delivery_date" translatable="false">Delivery Date</string>
+    <string name="textview_capture_image" translatable="false">Capture Image</string>
+    <string name="textview_image_size" translatable="false">Image Size</string>
+    <string name="textview_product_quantity" translatable="false">Quantity</string>
+    <string name="QR_CODE" translatable="false">QR Code</string>
+    <string name="textview_product_quantity_type" translatable="false">Quantity Type</string>
+    <string name="textview_product_color" translatable="false">Color</string>
+    <string name="gsb_dimension" translatable="false">Enter Dimension</string>
+    <string name="gsb_remark" translatable="false">Remark</string>
+    <string name="textview_order_date" translatable="false">Order Date</string>
+    <string name="textview_product_order_no" translatable="false">Order No.</string>
+    <string name="product_order_heading" translatable="false">Place Order</string>
+    <string name="product_order_view_heading" translatable="false">View Order</string>
+    <string name="product_order_edit_heading" translatable="false">Edit Order</string>
+    <string name="textview_product_l_w_t" translatable="false">L x W x T</string>
+    <string name="textview_product_name" translatable="false">Product Name</string>
+    <string name="textview_oredr_edit" translatable="false">Edit</string>
+    <string name="textview_oredr_cancel" translatable="false">Delete</string>
+    <string name="textview_oredr_status" translatable="false">Pending</string>
+    <string name="textview_view_order_date" translatable="false">Date</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="password" translatable="false">Password :</string>
+    <string name="loginid" translatable="false">Login Id :</string>
+    <string name="submit" translatable="false">Submit</string>
+    <string name="title_activity_complain_display" translatable="false">ComplainDisplay</string>
+    <string name="title_activity_complain_details" translatable="false">ComplainDetails</string>
+    <string name="complainid" translatable="false">Complain Id :</string>
+    <string name="addimage" translatable="false">Add Image</string>
+    <string name="submitimage" translatable="false">Submit</string>
+    <string name="title_activity_web_view_demo" translatable="false">WebViewDemo</string>
+    <string name="intro" translatable="false">Demonstrates a Web page where we will provide complains information and on click on any complain it will get the complain id and show the image screen.</string>
+    <string name="title_activity_sfsplash" translatable="false">SFSplash</string>
+    <string name="gsb_take_pic" translatable="false">Take Photo</string>
+    <string name="save" translatable="false">Save</string>
+    <string name="save_and_new" translatable="false">Save And New</string>
+    <string name="title_activity_document_upload" translatable="false">DocumentUploadActivity</string>
+    <string name="title_activity_checkout" translatable="false">CheckoutActivity</string>
+    <string name="title_activity_document_image" translatable="false">DocumentImageActivity</string>
+    <string name="title_activity_document_upload_new" translatable="false">DocumentUploadNewActivity</string>
+
+    <string name="player_error">Error initializing YouTube player: %s</string>
+
+    <string name="remark_text">In case of comfortCell series please do not remove the remark</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="no_scheme_available">No Scheme Available?</string>
+    <string name="no_scheme_applicable">No Scheme</string>
+    <string name="scheme">Scheme</string>
+    <string name="replacement">Replacement</string>
+    <string name="crash_report">The app has crash ! Please report by mail</string>
+
+
+    <string name="dailog_subtile">Now setup reminders for all our \n regular payments\n Introducing My Payments: Pay your landlord, guitar teacher or your driver in one click from your Bank account directly at 0% charge</string>
+    <string name="consumer_order">Consumer Order</string>
+</resources>

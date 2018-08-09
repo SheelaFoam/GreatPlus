@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/drawer_inbox"
+        android:icon="@drawable/inbox"
+        android:title="Inbox" />
+
+    <item
+        android:id="@+id/drawer_task"
+        android:icon="@drawable/my_task"
+        android:title="My Task" />
+
+    <item
+        android:id="@+id/drawer_appointments"
+        android:icon="@drawable/my_appiontment"
+        android:title="My Appointments" />
+
+    <item
+        android:id="@+id/drawer_performance"
+        android:icon="@drawable/my_performance"
+        android:title="Track Performance" />
+
+    <item
+        android:id="@+id/drawer_opinion"
+        android:icon="@drawable/eye_icon"
+        android:title="What is your opinion" />
+
+    <item
+        android:id="@+id/drawer_holiday"
+        android:icon="@drawable/eye_icon"
+        android:title="Holiday Calendar" />
+
+    <item
+        android:id="@+id/drawer_sankalp"
+        android:icon="@drawable/eye_icon"
+        android:title="Sankalp Stories" />
+
+    <item
+        android:id="@+id/drawer_events"
+        android:icon="@drawable/eye_icon"
+        android:title="Latest Events" />
+
+
+</menu>

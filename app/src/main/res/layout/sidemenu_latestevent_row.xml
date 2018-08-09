@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_15"
+    android:layout_marginLeft="@dimen/spacing_extra_tiny"
+    android:layout_marginRight="@dimen/spacing_extra_tiny"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/event_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/events_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sleepwell Business Conference"
+            android:textColor="@color/black"
+            android:textSize="@dimen/big_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/event_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_extra_small"
+            android:drawableLeft="@drawable/holidays_icon"
+            android:drawablePadding="@dimen/margin_10"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="12 Aug, 2016"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/event_matter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_extra_small"
+            android:textColor="@color/drawerBottomTextcolor"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/event_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@color/divider_bg" />
+
+</LinearLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+    
+    <dimen name="default_container_layout_padding">11px</dimen>
+    
+    
+    
+     <dimen name="default_title_text_size">35px</dimen>
+     <dimen name="default_title_text_size_extra">45px</dimen>
+    
+    
+    <!-- <activity_login> -->
+    
+    
+    <dimen name="login_body_padding">100px</dimen>
+    <dimen name="default_running_text_size">30px</dimen>
+    
+    <dimen name="default_running_text_size_small">23px</dimen>
+    
+    
+    
+    <dimen name="default_value_edit_text_margine_from_up">13px</dimen>
+    <dimen name="default_layout_margine_from_up">23px</dimen>
+    <dimen name="default_inner_text_padding_very_small">12.5px</dimen>
+    <dimen name="login_btn_layout_margine_from_up">45px</dimen>
+    
+    
+    <!-- <activity_dashboard> -->
+    
+    <dimen name="kpi_percent_text_size">62px</dimen>
+    <dimen name="kpi_name_text_size">30px</dimen>
+    <dimen name="kpi_three_bottom_text_size">25px</dimen>
+    <dimen name="noticeboard_title_text_size">21px</dimen>
+    <dimen name="kpi_board_width">284px</dimen>
+    
+    <dimen name="kpi_board_height">400px</dimen>
+    
+    <!-- <header> -->
+          
+          <dimen name="info_button_margine_right">25px</dimen>
+          <dimen name="info_button_margine_top">6px</dimen>
+          
+          
+   <!-- <changepassword> -->
+   
+   <dimen name="body_layout_margine_left">63px</dimen>
+   <dimen name="btn_save_layout_margine_top">63px</dimen>
+   
+     <!-- <profile> -->
+   
+   <dimen name="default_text_size_small_very_extra_extra">5px</dimen>
+   <dimen name="lable_profile_user_name_text_size">44px</dimen>
+   <dimen name="lable_employ_type_margine_top">6px</dimen>
+   <dimen name="scroll_view_margine_bottom">113px</dimen>
+   <dimen name="profile_imageview_size">225px</dimen>
+   
+     <!-- <address book> -->
+     
+     <dimen name="leble_bottom_distributor_size">26px</dimen>
+     <dimen name="lable_botton_text_size">25px</dimen>
+     <dimen name="listview_margine_bottom">75px</dimen>
+     <dimen name="emp_type_lable_margine_left">15px</dimen>
+     <dimen name="rlayout_emp_name_margine_top">23px</dimen>
+     
+     
+      <!-- <contact> -->
+     <dimen name="llayout_margine_top">38px</dimen>
+     
+      <dimen name="profile_img_width">175px</dimen>
+      <dimen name="profile_img_height">194px</dimen>
+      
+      
+      <dimen name="tour_trip_profile_img_width">63px</dimen>
+       <dimen name="tour_trip_profile_img_height">63px</dimen>
+           
+           
+            <dimen name="llayout_margine_top_small_very_very">4.2px</dimen>
+            <dimen name="calender_item_cell_height">83px</dimen>
+            <dimen name="calender_item_cell_width">83px</dimen>
+            
+             <dimen name="calender_item_cell_height_small">66px</dimen>
+            <dimen name="calender_item_cell_width_small">66px</dimen>
+            
+          <dimen name="input_height">63px</dimen>
+           <dimen name="input_width">63px</dimen>
+           
+           
+           
+            <dimen name="dcr_list_height">523px</dimen>
+           
+             <dimen name="dtp_list_height">288px</dimen>
+             
+             
+             <dimen name="dcr_map_height">648px</dimen>
+             
+             <dimen name="product_order_text_field_width">263px</dimen>
+             <dimen name="product_order_form_container_width">515px</dimen>
+    
+     <dimen name="report_text_size">22dp</dimen>
+    
+    
+    
+</resources>

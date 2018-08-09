@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector>
+<!--     <item -->
+<!--     	  android:drawable="@drawable/calendar_cel_selectl" -->
+<!--           android:state_pressed="true" /> -->
+<!--     <item  -->
+<!--     	  android:drawable="@drawable/calendar_cel_selectl" -->
+<!--           android:state_focused="true" /> -->
+<!--     <item   -->
+<!--      	  android:drawable="@drawable/calendar_cell" />
+	android:drawable="@drawable/circle"	-->
+
+
+
+<!--  <item
+    	  android:drawable="@drawable/circle"
+          android:state_pressed="true" />
+    <item 
+    	  android:drawable="@drawable/circle"
+          android:state_focused="true" />
+    <item  
+     	  android:drawable="@color/text_color_green" /> -->
+
+</selector>

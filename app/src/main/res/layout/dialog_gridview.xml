@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+    
+    
+    
+
+    <RelativeLayout
+        android:id="@+id/holder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:id="@+id/rlayout_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            
+            
+            <RelativeLayout
+                android:id="@+id/rlayout_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                 android:background="@color/popup_header_bg"
+                >
+               
+            <TextView
+                
+                android:id="@+id/textview_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Management"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/default_running_text_size"
+                android:padding="@dimen/default_container_layout_padding"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+               
+                />
+
+           <RelativeLayout
+               android:id="@+id/rlayout_cross_btn"
+               android:layout_width="wrap_content"
+               android:layout_height="@dimen/login_btn_layout_margine_from_up"
+               android:layout_alignParentRight="true"
+               android:layout_toRightOf="@+id/textview_header"
+               android:layout_centerVertical="true" 
+               
+               >
+
+                 <ImageButton
+                android:id="@+id/imgbtn_cross_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/cross_btn"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="@dimen/default_value_edit_text_margine_from_up"
+                />
+             </RelativeLayout>
+               </RelativeLayout> 
+          
+             <RelativeLayout
+                android:id="@+id/rlayout_gridview"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/profile_imageview_size"
+                android:layout_below="@+id/rlayout_header"
+                android:background="@drawable/popup_bg"
+                >
+                
+         <GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:numColumns="3"
+                android:layout_marginLeft="@dimen/default_layout_margine_from_up"
+                android:layout_marginRight="@dimen/default_layout_margine_from_up"
+                android:layout_marginTop="@dimen/default_layout_margine_from_up"
+              
+                />
+        </RelativeLayout>
+         </RelativeLayout>
+        </RelativeLayout>
+    
+</RelativeLayout>

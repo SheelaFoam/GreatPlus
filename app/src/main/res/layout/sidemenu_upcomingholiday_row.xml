@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_15"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/holiday_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5th Sep, 2016"
+        android:textColor="@color/red_color"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:id="@+id/holiday_festival"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inbox_layout"
+        android:text="Ganesh Chatrthi"
+        android:textColor="@color/drawerBottomTextcolor"
+        android:textSize="@dimen/small_text_size"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/holiday_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@color/divider_bg" />
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <integer name="maximum">6</integer>
+      <integer name="branch_name_ems">12</integer>
+      
+       <integer name="kpi_text_name_ems">6</integer>
+       <integer name="kpi_six_text_name_ems">12</integer>
+     
+      
+      
+    
+</resources>

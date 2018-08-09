@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_5"
+    android:background="@color/colorGray"
+    android:padding="@dimen/padding_5">
+<com.erp.sheelafoam.utils.CustomTypefaceTextView
+    android:id="@+id/tv_pendingTitle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:padding="@dimen/padding_5"
+    android:textSize="@dimen/text_16"
+    android:text="Pre Order Pending For Gurantee Registration\n Please gurantee registration befour new order"/>
+    <ListView
+        android:id="@+id/list_pending"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pendingTitle"/>
+</RelativeLayout>

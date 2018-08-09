@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.erp.sheelafoam.sheelafoam.xperia.activity.LogComplaintActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/app_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/header_background"
+                android:elevation="4dp"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/Toolbar_Theme">
+
+                <LinearLayout
+                    android:id="@+id/app_toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/app_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Title"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/big_text_size" />
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/field_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_main"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <EditText
+            android:id="@+id/search_serial_num"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/input_full_bg_new"
+            android:gravity="center_vertical"
+            android:hint="Sr. No"
+            android:inputType="text|textCapCharacters"
+            android:maxLength="15"
+            android:padding="@dimen/default_container_layout_padding"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/leble_bottom_distributor_size" />
+
+        <EditText
+            android:id="@+id/search_bundle_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/input_full_bg_new"
+            android:gravity="center_vertical"
+            android:hint="Bundle No"
+            android:inputType="text|textCapCharacters"
+            android:maxLength="15"
+            android:padding="@dimen/default_container_layout_padding"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/leble_bottom_distributor_size" />
+
+        <EditText
+            android:id="@+id/et_invoice_no"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/input_full_bg_new"
+            android:gravity="center_vertical"
+            android:hint="Invoice No"
+            android:inputType="text|textCapCharacters"
+            android:maxLength="15"
+            android:padding="@dimen/default_container_layout_padding"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/leble_bottom_distributor_size" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/field_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="7dp"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <TextView
+            android:id="@+id/tv_search"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:background="@color/header_background"
+            android:gravity="center"
+            android:text="Search"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="OR" />
+
+        <TextView
+            android:id="@+id/tv_scan"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:background="@color/header_background"
+            android:gravity="center"
+            android:text="Scan"
+            android:textColor="@android:color/white" />
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_layout"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/customer_details_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:text="Customer Details:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/customer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/input_full_bg_new"
+                android:gravity="center_vertical"
+                android:hint="Name"
+                android:inputType="text|textCapCharacters"
+                android:maxLines="1"
+                android:padding="@dimen/default_container_layout_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/leble_bottom_distributor_size" />
+
+            <EditText
+                android:id="@+id/customer_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/input_full_bg_new"
+                android:gravity="center_vertical"
+                android:hint="Mobile No"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:padding="@dimen/default_container_layout_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/leble_bottom_distributor_size" />
+            <EditText
+                android:id="@+id/customer_emailId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/input_full_bg_new"
+                android:gravity="center_vertical"
+                android:hint="Email id"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="@dimen/default_container_layout_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/leble_bottom_distributor_size" />
+
+            <EditText
+                android:id="@+id/customer_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/input_full_bg_new"
+                android:gravity="center_vertical"
+                android:hint="Address"
+                android:inputType="text|textCapCharacters"
+                android:maxLines="3"
+                android:padding="@dimen/default_container_layout_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/leble_bottom_distributor_size" />
+
+            <LinearLayout
+                android:layout_marginTop="7dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/state"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_full_bg_new"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="State"
+                    android:inputType="text|textCapCharacters"
+                    android:padding="@dimen/default_container_layout_padding"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/leble_bottom_distributor_size" />
+
+                <EditText
+                    android:id="@+id/city"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_full_bg_new"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="City"
+                    android:inputType="text|textCapCharacters"
+                    android:padding="@dimen/default_container_layout_padding"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/leble_bottom_distributor_size" />
+
+                <EditText
+                    android:id="@+id/pin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_full_bg_new"
+                    android:gravity="center_vertical"
+                    android:hint="PIN No"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="@dimen/default_container_layout_padding"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/leble_bottom_distributor_size" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginTop="7dp"
+                android:text="Dealer Details:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/dealer_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1"
+                android:background="@drawable/input_full_bg_new"
+                android:gravity="center_vertical"
+                android:hint="Dealer Name"
+                android:maxLines="1"
+                android:padding="@dimen/default_container_layout_padding"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/leble_bottom_distributor_size" />
+
+
+
+
+            <TextView
+                android:id="@+id/product"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/input_full_bg_new"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:hint="Product"
+                android:padding="9dp"
+                android:textColor="#000"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/leble_bottom_distributor_size" />
+
+
+            <LinearLayout
+                android:layout_marginTop="7dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/length"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_full_bg_new"
+                    android:gravity="center_vertical"
+                    android:hint="L"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="@dimen/default_container_layout_padding"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/leble_bottom_distributor_size" />
+
+                <EditText
+                    android:id="@+id/width"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_full_bg_new"
+                    android:gravity="center_vertical"
+                    android:hint="W"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="@dimen/default_container_layout_padding"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/leble_bottom_distributor_size" />
+
+                <EditText
+                    android:id="@+id/thick"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_full_bg_new"
+                    android:gravity="center_vertical"
+                    android:hint="T"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="@dimen/default_container_layout_padding"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/leble_bottom_distributor_size" />
+
+            </LinearLayout>
+
+
+
+            <EditText
+                android:id="@+id/serial_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/input_full_bg_new"
+                android:hint="Serial Number"
+                android:inputType="text"
+                android:padding="9dp"
+                android:textColor="#000"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/leble_bottom_distributor_size" />
+
+
+            <TextView
+                android:id="@+id/purchase_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/input_full_bg_new"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:hint="Purchase Date"
+                android:padding="9dp"
+                android:textColor="#000"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/leble_bottom_distributor_size" />
+            <LinearLayout
+                android:layout_marginTop="7dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="3">
+
+                <EditText
+                    android:id="@+id/dlrState"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_full_bg_new"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="State"
+                    android:visibility="gone"
+                    android:inputType="text|textCapCharacters"
+                    android:padding="@dimen/default_container_layout_padding"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/leble_bottom_distributor_size" />
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/dlrCity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_full_bg_new"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:focusable="false"
+                    android:gravity="center_vertical"
+                    android:hint="City"
+                    android:inputType="text|textCapCharacters"
+                    android:padding="@dimen/default_container_layout_padding"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/leble_bottom_distributor_size" />
+
+                <EditText
+                    android:visibility="gone"
+                    android:id="@+id/dlrPin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_full_bg_new"
+                    android:gravity="center_vertical"
+                    android:hint="PIN No"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:padding="@dimen/default_container_layout_padding"
+                    android:textColor="@android:color/black"
+                    android:textSize="@dimen/leble_bottom_distributor_size" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="MRP"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <EditText
+                    android:id="@+id/existing_mrp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_full_bg_new"
+                    android:hint="Existing"
+                    android:inputType="number"
+                    android:padding="9dp"
+                    android:textColor="#000"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/leble_bottom_distributor_size" />
+
+                <EditText
+                    android:id="@+id/purchased_mrp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/input_full_bg_new"
+                    android:hint="Purchased"
+                    android:inputType="number"
+                    android:padding="9dp"
+                    android:textColor="#000"
+                    android:textColorHint="@color/colorPrimary"
+                    android:textSize="@dimen/leble_bottom_distributor_size" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/complaint_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/input_full_bg_new"
+                android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                android:hint="Complaint Type"
+                android:padding="9dp"
+                android:textColor="#000"
+                android:textColorHint="@color/colorPrimary"
+                android:textSize="@dimen/leble_bottom_distributor_size" />
+
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="7dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="7dp"
+                android:background="@color/colorPrimary"
+                android:text="SUBMIT"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

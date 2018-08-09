@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+     <integer name="maximum">9</integer>
+     <integer name="branch_name_ems">6</integer>
+     <integer name="kpi_text_name_ems">9</integer>
+    
+</resources>

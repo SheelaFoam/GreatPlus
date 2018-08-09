@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_10">
+
+    <RadioButton
+        android:id="@+id/radio_btn_custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:buttonTint="#0a6aff"
+        android:checked="true" />
+
+    <com.erp.sheelafoam.utils.CustomTypefaceTextView
+        android:id="@+id/tv_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Anand"
+        android:buttonTint="#0a6aff"
+        android:padding="@dimen/padding_7"
+        android:textSize="@dimen/text_14"/>
+</LinearLayout>

@@ -1,0 +1,271 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context="com.erp.sheelafoam.sheelafoam.exchangeschame.ExchangeSchameActivity">
+
+   <!-- <RelativeLayout
+        android:id="@+id/rlayout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/app_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/header_background"
+                android:elevation="4dp"
+                android:minHeight="?attr/actionBarSize"
+                android:theme="@style/Toolbar_Theme">
+
+                <LinearLayout
+                    android:id="@+id/app_toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/app_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Title"
+                        android:textAllCaps="true"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/big_text_size" />
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+    </RelativeLayout>-->
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/actionbar_new" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actionBar">
+
+        <RelativeLayout
+            android:id="@+id/rlayout_holder"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+
+            <LinearLayout
+                android:id="@+id/rlayout_dealer_code"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:weightSum="100">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autocomplete_representativeName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/default_running_text_size"
+                    android:background="@drawable/input_full_bg_new"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Sales Representative Name"
+                    android:inputType="textCapWords"
+                    android:longClickable="false"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/default_inner_text_padding_very_small"
+                    android:paddingRight="@dimen/default_inner_text_padding_very_small"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/default_running_text_size_small"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/SheelaFoamID_ExchangeOffer_SerialNoOneContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edittext_serialNoOne"
+                        android:layout_width="@dimen/width_qrcode_input"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/input_full_bg_new"
+                        android:gravity="center_vertical"
+                        android:hint="Serial No.-1"
+                        android:inputType="text|textCapCharacters"
+                        android:longClickable="false"
+                        android:maxLength="10"
+                        android:paddingLeft="@dimen/default_inner_text_padding_very_small"
+                        android:paddingRight="@dimen/default_inner_text_padding_very_small"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/default_running_text_size_small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/SheelaFoamID_ExchangeScheme_ScanSerialNoOneTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/default_value_edit_text_margine_from_up"
+                        android:layout_weight="30"
+                        android:background="@color/header_background"
+                        android:gravity="center"
+                        android:text="Scan"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/SheelaFoamID_ExchangeOffer_SerialNoTwoContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/edittext_serialNoTwo"
+                        android:layout_width="@dimen/width_qrcode_input"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_running_text_size"
+                        android:background="@drawable/input_full_bg_new"
+                        android:gravity="center_vertical"
+                        android:hint="Serial No-2"
+                        android:inputType="text|textCapCharacters"
+                        android:longClickable="false"
+                        android:maxLength="10"
+                        android:paddingLeft="@dimen/default_inner_text_padding_very_small"
+                        android:paddingRight="@dimen/default_inner_text_padding_very_small"
+                        android:singleLine="true"
+                        android:textColor="@android:color/black"
+                        android:textCursorDrawable="@null"
+                        android:textSize="@dimen/default_running_text_size_small"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/SheelaFoamID_ExchangeScheme_ScanSerialNoTwoTV"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/default_value_edit_text_margine_from_up"
+                        android:layout_marginTop="@dimen/default_running_text_size"
+                        android:layout_weight="30"
+                        android:background="@color/header_background"
+                        android:gravity="center"
+                        android:text="Scan"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_running_text_size"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <RadioGroup
+                        android:id="@+id/radiogroupScheme"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/radioScheme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/header_background"
+                            android:text="@string/scheme"/>
+
+                        <RadioButton
+                            android:id="@+id/radioNoScheme"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/header_background"
+                            android:text="@string/no_scheme_applicable"
+                            android:checked="true"/>
+                        <RadioButton
+                            android:id="@+id/radioReplace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="@color/header_background"
+                            android:text="@string/replacement" />
+
+                    </RadioGroup>
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edittext_customerNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_running_text_size"
+                    android:background="@drawable/input_full_bg_new"
+                    android:gravity="center_vertical"
+                    android:hint="Customer No."
+                    android:inputType="number"
+                    android:longClickable="false"
+                    android:maxLength="10"
+                    android:paddingLeft="@dimen/default_inner_text_padding_very_small"
+                    android:paddingRight="@dimen/default_inner_text_padding_very_small"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/default_running_text_size_small"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/etName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/default_running_text_size"
+                    android:background="@drawable/input_full_bg_new"
+                    android:gravity="center_vertical"
+                    android:hint="Customer Name."
+                    android:inputType="textCapWords"
+                    android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                    android:longClickable="false"
+                    android:paddingLeft="@dimen/default_inner_text_padding_very_small"
+                    android:paddingRight="@dimen/default_inner_text_padding_very_small"
+                    android:singleLine="true"
+                    android:textColor="@android:color/black"
+                    android:textCursorDrawable="@null"
+                    android:textSize="@dimen/default_running_text_size_small"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llayout_send"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlayout_dealer_code"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin">
+                <TextView
+                android:id="@+id/textview_send"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/header_background"
+                android:gravity="center"
+                    android:padding="@dimen/padding_10"
+                android:text="SEND"
+                android:textColor="@android:color/white" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

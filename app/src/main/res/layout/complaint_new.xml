@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+    <RelativeLayout
+        android:id="@+id/rlheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/app_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/header_background"
+                android:elevation="4dp"
+                android:theme="@style/Toolbar_Theme"
+                android:minHeight="?attr/actionBarSize"
+                >
+                <LinearLayout
+                    android:id="@+id/app_toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/app_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:ellipsize="end"
+                        android:textAllCaps="true"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/big_text_size"
+                        />
+                </LinearLayout>
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/search_row"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginTop="19dp"
+        android:layout_below="@+id/rlheader"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/et_complaint_id"
+            android:layout_weight="2"
+            android:inputType="textCapCharacters"
+            android:padding="8dp"
+            android:background="@drawable/edittext_drawable"
+            android:hint="Enter CmpId or Mobile or Name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:layout_marginLeft="4dp"
+            android:textColor="@color/colorPrimary"
+            android:text="Search"
+            android:background="@drawable/edittext_drawable"
+            android:layout_below="@+id/rlheader"
+            android:id="@+id/search_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_log_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:layout_below="@+id/search_row"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:id="@+id/btn_log_pre"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:background="@drawable/btn_blue_curve"
+            android:gravity="center"
+            android:minHeight="@dimen/button_height"
+            android:text="LOG Pre usage "
+            android:textColor="@color/white" />
+        <Button
+            android:id="@+id/btn_log_post"
+            android:layout_width="140dp"
+            android:layout_height="40dp"
+            android:background="@drawable/btn_blue_curve"
+            android:gravity="center"
+            android:minHeight="@dimen/button_height"
+            android:text="LOG post usage "
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="17dp"
+            android:layout_marginEnd="17dp" />
+    </RelativeLayout>
+    <ProgressBar
+        android:id="@+id/pb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+    <ListView
+        android:id="@+id/complaintList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout_log_button"
+        android:layout_marginTop="5dp"
+        android:divider="#ffffff"
+        android:dividerHeight="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+    </ListView>
+    <RelativeLayout
+        android:layout_marginBottom="10dp"
+        android:visibility="visible"
+        android:id="@+id/failed_complaint"
+        android:clickable="true"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/failed_upload_shape"
+        android:padding="5dp" >
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/failed_upload" />
+    </RelativeLayout>
+
+</RelativeLayout>

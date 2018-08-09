@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.erp.sheelafoam"
+    android:versionCode="48"
+    android:versionName="1.2.4">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- This app has permission to read SMS for OTP verification -->
+
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <!-- From Old App -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-sdk tools:overrideLibrary="android.support.customtabs"/>
+    <application
+        android:name=".utils.ACRAActivity"
+        android:allowBackup="true"
+        android:icon="@drawable/app_logo"
+        android:label="@string/app_name"
+        android:resizeableActivity="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="HardcodedDebugMode">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.erp.sheelafoam.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".Password_OTP"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".HomeScreen"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="post_details"
+                    android:scheme="greatplus" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".HeaderMenuDesc_Web"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewWebViewActivity"
+            android:parentActivityName=".HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sheelafoam.xperia.activity.MrpCalculation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".sheelafoam.xperia.activity.ComplaintNew"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".sheelafoam.xperia.activity.AddDetailsnew"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".sheelafoam.xperia.activity.ZoomImageFr"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="nl.changer.polypicker.ImagePickerActivity"
+            android:configChanges="mcc|mnc|touchscreen|orientation|uiMode|screenSize|keyboardHidden" />
+
+        <activity
+            android:name=".sheelafoam.activity.MTSReportActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".sheelafoam.exchangeschame.ConsumerOredrActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+
+
+        <activity
+            android:name=".sheelafoam.exchangeschame.ConsumerOrderActivity2"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".sheelafoam.exchangeschame.SalesRapActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".sheelafoam.adapter.ConsumerOrderInformation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".sheelafoam.exchangeschame.ProductMainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".passbook.PassbookMainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme1"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".sheelafoam.exchangeschame.ProductActivityFirst"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".sheelafoam.activity.FootFall_Activity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".sheelafoam.activity.CustomerFeedbackActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".sheelafoam.activity.CustomerFeedBackListActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".sheelafoam.activity.ShowroomImageActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".sheelafoam.activity.PerformanceActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".sheelafoam.activity.PerformanceActivityTwo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"/>
+        <activity
+            android:name=".sheelafoam.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".sheelafoam.activity.ChangeRoleActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+
+        </activity>
+        <activity
+            android:name=".sheelafoam.activity.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name=".sheelafoam.activity.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".sheelafoam.webview.WebViewDemo"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".sheelafoam.complaint.ComplainDetails"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".sheelafoam.activity.PreLoginNew"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".sheelafoam.qrcode.ScanQrCodeActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".HomeScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".sheelafoam.activity.SupportActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".HomeScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".sheelafoam.qrcode.QRCodeReportActivity"
+            android:label="@string/app_name"
+            android:parentActivityName=".sheelafoam.qrcode.ScanQrCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".sheelafoam.activity.NotificationActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+        android:name=".sheelafoam.exchangeschame.ExchangeSchameActivity"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:theme="@style/AppTheme"
+        android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".sheelafoam.exchangeschame.ConsumerExchangeSchemeActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan" />
+
+        <activity
+            android:name=".sheelafoam.activity.HomeActivityNew"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize">
+
+            <!-- android:windowSoftInputMode="stateHidden|adjustPan" -->
+        </activity>
+        <activity
+            android:name=".sheelafoam.activity.ZoomActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"
+            android:windowSoftInputMode="adjustResize">
+
+            <!-- android:windowSoftInputMode="stateHidden|adjustPan" -->
+        </activity>
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!-- map key by claritusdelhi@gmail.com -->
+        <!--
+          <meta-data
+	     android:name="com.google.android.maps.v2.API_KEY"
+	     android:value="AIzaSyBfZSI_x69rTZkMVm1sAHh9HzCMXyhYaRg" />
+        -->
+        <!-- Service call for gps location -->
+
+        <receiver android:name=".sheelafoam.reciever.MyBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".sheelafoam.reciever.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- GCM BroadCast Receiver & Service -->
+        <receiver
+            android:name=".erp.sheelafoam.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+
+                <category android:name="com.erp.sheelafoam" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".erp.sheelafoam.GcmIntentService" />
+        <service android:name=".erp.sheelafoam.RegisterGCMService" />
+
+        <!--
+        GCM Key AIzaSyC3JhFxyivdRmKk_09zKvTsj7BsvlAP4uM
+   		project number 158609295269
+ 		by claritusdelhi@gmail.com
+        -->
+
+
+        <!--
+         GCM Key AIzaSyB1KI9DsHe13P1s-HFSqPiJjqO8WQAGSaY
+   		project number 955458836415
+ 		by sheelafoam123@gmail.com
+ 		project name "MySheelaFoamErp" && package name is "com.erp.sheelafoam" on Google API console
+        -->
+
+
+        <!-- fabric ApiKey -->
+        <!--
+         <meta-data
+            android:name="io.fabric.ApiKey"
+               android:value="a30f629fc811bc812a66a377c41ab160a07f0783" />
+        -->
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <!--
+        <receiver android:name=".Tim">
+            <intent-filter>
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+        -->
+        <activity
+            android:name=".sheelafoam.activity.DocumentUploadActivity"
+            android:label="@string/title_activity_document_upload"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".sheelafoam.activity.CheckoutActivity"
+            android:label="@string/title_activity_checkout"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".sheelafoam.activity.WebViewActivity"
+            android:label="@string/title_activity_checkout"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".sheelafoam.activity.DocumentImageActivity"
+            android:label="@string/title_activity_document_image"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen" />
+        <activity
+            android:name=".sheelafoam.activity.DocumentUploadNewActivity"
+            android:label="@string/title_activity_document_upload_new"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="stateHidden" />
+
+        <receiver android:name=".sheelafoam.reciever.MessageReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".MoreAboutComplaint"
+            android:parentActivityName=".sheelafoam.xperia.activity.ComplaintNew" />
+        <activity
+            android:name=".sheelafoam.xperia.activity.LogComplaintActivity"
+            android:parentActivityName=".sheelafoam.xperia.activity.ComplaintNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sheelafoam.xperia.activity.PerfectMatch"
+            android:parentActivityName=".HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sheelafoam.xperia.activity.PerfectMatchOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sheelafoam.xperia.activity.UnregisterGcard"
+            android:parentActivityName=".sheelafoam.exchangeschame.ExchangeSchameActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderDashboardActivity"
+            android:parentActivityName=".HomeScreen"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".UploadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sheelafoam.activity.GuaranteeLog"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".sheelafoam.activity.BumperOfferActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+
+
+        <service
+            android:name="com.erp.sheelafoam.sheelafoam.services.BumperOfferService"
+            android:exported="false"/>
+
+
+    </application>
+
+</manifest>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_30">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ivBumper"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/discount"
+                android:scaleType="fitXY" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tvDealer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:shadowColor="@color/colorGray"
+                android:textColor="@color/white"
+                android:shadowDx="-1"
+                android:shadowRadius="2"
+                android:shadowDy="-1"/>
+        </FrameLayout>
+
+
+        <ImageView
+            android:id="@+id/ivCancel"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:src="@drawable/ic_cancel_white_48dp"
+            android:layout_gravity="right"
+            android:scaleType="fitXY"/>
+
+    </FrameLayout>
+
+
+</LinearLayout>

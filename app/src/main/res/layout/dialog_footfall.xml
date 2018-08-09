@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.erp.sheelafoam.utils.CustomTypefaceTextView
+        android:id="@+id/tv_subTile_footfall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_10"
+        android:text="TITLE"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <View
+        android:id="@+id/dialog_line_footfall"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_subTile_footfall"
+        android:layout_marginTop="5dp"
+        android:background="#c5c5c5" />
+
+        <ListView
+            android:id="@+id/recycler_footfall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/dialog_footfall2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/recycler_footfall"
+        android:layout_marginTop="5dp"
+        android:background="#c5c5c5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_10">
+
+        <TextView
+            android:id="@+id/btn_footfall_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_5"
+            android:text="OK"
+            android:textColor="#0a6aff"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:id="@+id/btn_footfall_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_footfall_ok"
+            android:gravity="end"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_5"
+            android:text="CANCEL"
+            android:textColor="#0a6aff"
+            android:textSize="@dimen/text_16" />
+    </RelativeLayout>
+</LinearLayout>

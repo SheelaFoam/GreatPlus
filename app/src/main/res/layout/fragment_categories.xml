@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_new" >
+           
+                
+            <GridView
+                android:layout_above="@+id/web"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:id="@+id/gridview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"
+                android:layout_margin="@dimen/default_layout_margine_from_up"/>
+            
+       <WebView
+           android:visibility="invisible"
+           android:layout_margin="5dp"
+           android:layout_alignParentBottom="true"
+       android:background="#00000000"
+       android:id="@+id/web"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+  	   </WebView>
+
+</RelativeLayout>

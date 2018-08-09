@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_20"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/inbox_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vinay, Gagneet"
+            android:textAllCaps="true"
+            android:textColor="@color/dark_grey_txt_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/inbox_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:text=""
+            android:textSize="@dimen/smaller_text_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/inbox_subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_extra_tiny"
+        android:text="Project Plan of Sheela Foams"
+        android:textColor="@color/drawerBottomTextcolor"
+        android:textSize="@dimen/text_size" />
+
+
+    <TextView
+        android:id="@+id/inbox_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/divider_bg" />
+
+</LinearLayout>

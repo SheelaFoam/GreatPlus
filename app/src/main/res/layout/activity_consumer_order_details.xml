@@ -1,0 +1,698 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f4"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/action_bar_search" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_10"
+            android:layout_marginLeft="@dimen/padding_10"
+            android:layout_marginRight="@dimen/padding_10"
+            android:layout_marginTop="@dimen/padding_10"
+            android:background="@color/gray_bg"
+            android:padding="@dimen/padding_2">
+
+            <ScrollView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:orientation="vertical">
+<com.erp.sheelafoam.utils.CustomTypefaceTextView
+    android:id="@+id/tv_consumerDelearName"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Anand"
+    android:gravity="center"
+    android:padding="@dimen/padding_5"
+    android:textSize="@dimen/text_18"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="left|center"
+                                android:padding="@dimen/padding_5"
+                                android:text="Mobile Number"
+                                android:textColor="@color/colorBlack" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/margin_5"
+                                android:layout_marginLeft="@dimen/margin_5"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_marginTop="@dimen/margin_5"
+                                android:background="@drawable/custom_background">
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceEditText
+                                    android:id="@+id/etMobileNo"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_alignParentTop="true"
+                                    android:background="@null"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:hint="XXXXXXXXXX"
+                                    android:inputType="number"
+                                    android:longClickable="false"
+                                    android:maxLength="10"
+                                    android:padding="@dimen/padding_10"
+                                    android:singleLine="true"
+                                    android:textColor="@color/colorBlack"
+                                    android:textColorHint="@color/colorBlack"
+                                    android:textSize="@dimen/text_14" />
+
+                                <ImageButton
+                                    android:id="@+id/ivSearch"
+                                    android:layout_width="40dp"
+                                    android:layout_height="40dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:background="@null"
+                                    android:src="@android:drawable/ic_menu_search"
+                                    android:visibility="visible" />
+
+                                <LinearLayout
+                                    android:layout_width="1dp"
+                                    android:layout_height="42dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toLeftOf="@+id/ivSearch"
+                                    android:background="#cccccc" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="left|center"
+                                android:padding="@dimen/padding_7"
+                                android:text="Consumer Name"
+                                android:textColor="@color/colorBlack" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:layout_marginLeft="@dimen/margin_5"
+                            android:layout_marginRight="@dimen/margin_5"
+                            android:layout_marginTop="@dimen/margin_25">
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceEditText
+                                android:id="@+id/etConsumerName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:background="@drawable/custom_background"
+                                android:hint="Enter consumer name"
+                                android:padding="@dimen/padding_12"
+                                android:singleLine="true"
+                                android:inputType="textCapWords"
+                                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ "
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/colorBlack"
+                                android:textSize="@dimen/text_14" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linearProductName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_2"
+                        android:visibility="visible">
+
+                        <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                            android:id="@+id/tv_productNameConsumerHint"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="@dimen/default_container_layout_padding"
+                            android:text="@string/textview_product_list"
+                            android:textColor="@color/hint_color"
+                            android:textSize="@dimen/leble_bottom_distributor_size" />
+
+
+                        <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                            android:id="@+id/autocomplete_product_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/default_text_size_small_very_extra_extra"
+                            android:background="@drawable/custom_background"
+                            android:drawableEnd="@drawable/select_arrow"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:hint=""
+                            android:inputType="text|textNoSuggestions"
+                            android:padding="@dimen/padding_12"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textSize="@dimen/leble_bottom_distributor_size" />
+
+                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="2dp"
+                    android:weightSum="2">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Inch"
+                                android:textColor="#18b1d7" />
+
+                            <RelativeLayout
+                                android:layout_width="50dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp">
+
+                                <TextView
+                                    android:id="@+id/tvswitch"
+                                    android:layout_width="50dp"
+                                    android:layout_height="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:background="@drawable/switch_selecter"
+                                    android:clickable="true" />
+
+                                <TextView
+                                    android:id="@+id/tvin"
+                                    android:layout_width="17dp"
+                                    android:layout_height="17dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="2dp"
+                                    android:background="@drawable/track_ball_selecter"
+                                    android:clickable="true" />
+
+                                <TextView
+                                    android:id="@+id/tvmm"
+                                    android:layout_width="17dp"
+                                    android:layout_height="17dp"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="2dp"
+                                    android:background="@drawable/track_ball_selecter"
+                                    android:clickable="true" />
+                            </RelativeLayout>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="7dp"
+                                android:text="Mm"
+                                android:textColor="#18b1d7" />
+                        </LinearLayout>
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="37dp"
+                        android:layout_weight="1"
+                        android:weightSum="2"
+                        android:orientation="horizontal"
+                        android:padding="2dp">
+
+                        <TextView
+                            android:id="@+id/tvSizes"
+                            android:layout_width="0dp"
+                            android:layout_weight="2"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/show_button_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="Standard Size"
+                            android:textColor="#ffffff" />
+                     <!--   <TextView
+                            android:layout_width="0dp"
+                            android:id="@+id/tv_customSize"
+                            android:layout_marginLeft="@dimen/padding_5"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:background="@drawable/show_button_selector"
+                            android:clickable="true"
+                            android:gravity="center"
+                            android:text="Custom"
+                            android:textColor="#ffffff" />-->
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginTop="20dp"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Length"
+                            android:textColor="#18b1d7" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Breadth"
+                            android:textColor="#18b1d7" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="Thickness(MM)"
+                            android:textColor="#18b1d7" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="37dp"
+                        android:background="@drawable/mat_size_bg_inactive"
+                        android:orientation="horizontal"
+                        android:weightSum="3">
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/mat_width"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="2dp"
+                                android:layout_toLeftOf="@+id/v1"
+                                android:background="@drawable/transparent_edit_bg"
+                                android:gravity="center"
+                                android:hint="--"
+                                android:inputType="numberDecimal"
+                                android:textColor="#000000" />
+
+                            <View
+                                android:id="@+id/v1"
+                                android:layout_width="1dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:background="#999999" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/mat_height"
+                                android:layout_width="match_parent"
+                                android:layout_height="35dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="2dp"
+                                android:layout_toLeftOf="@+id/v2"
+                                android:background="@drawable/transparent_edit_bg"
+                                android:gravity="center"
+                                android:hint="--"
+                                android:inputType="numberDecimal"
+                                android:textColor="#000000" />
+
+                            <View
+                                android:id="@+id/v2"
+                                android:layout_width="1dp"
+                                android:layout_height="40dp"
+                                android:layout_alignParentRight="true"
+                                android:background="#999999" />
+                        </RelativeLayout>
+
+                        <EditText
+                            android:id="@+id/tvThikness"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginBottom="2dp"
+                            android:layout_marginLeft="2dp"
+                            android:layout_marginRight="2dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/transparent_edit_bg"
+                            android:clickable="true"
+                            android:focusableInTouchMode="false"
+                            android:gravity="center"
+                            android:hint="--"
+                            android:inputType="number"
+                            android:textColor="#000000" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_5"
+                        android:weightSum="10">
+
+                        <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/margin_5"
+                            android:layout_weight="4"
+                            android:text="QTY:"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_16" />
+
+
+                        <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                            android:id="@+id/tv_removeItem"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginRight="@dimen/margin_10"
+                            android:background="@drawable/round_text_remove_item"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="-"
+                            android:textColor="#FF0000"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                            android:id="@+id/tv_totalQTY"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="5dp"
+                            android:layout_toLeftOf="@+id/add_item"
+                            android:ellipsize="marquee"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:freezesText="true"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="0"
+                            android:textColor="@android:color/background_dark"
+                            android:textSize="@dimen/text_14" />
+
+                        <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                            android:id="@+id/tv_additem"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:layout_marginLeft="@dimen/margin_10"
+                            android:background="@drawable/round_text_add_item"
+                            android:gravity="center_vertical|center_horizontal"
+                            android:text="+"
+                            android:textColor="@color/consumer_color"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                   <!-- <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="left|center"
+                                android:padding="@dimen/padding_7"
+                                android:text="Advance Amount"
+                                android:textColor="@color/colorBlack" />
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_5"
+                            android:layout_marginLeft="@dimen/margin_5"
+                            android:layout_marginRight="@dimen/margin_5"
+                            android:layout_marginTop="@dimen/margin_25">
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceEditText
+                                android:id="@+id/etAdvance"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="@dimen/margin_10"
+                                android:background="@drawable/custom_background"
+                                android:hint="XXX"
+                                android:padding="@dimen/padding_12"
+                                android:singleLine="true"
+                                android:inputType="number"
+                                android:textColor="@color/colorBlack"
+                                android:textColorHint="@color/colorBlack"
+                                android:textSize="@dimen/text_14" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>-->
+                    <!--<LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/padding_5"
+                            android:weightSum="10">
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:text="Total amount :"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_16" />
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:id="@+id/tv_totalAmountOrder"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_weight="4"
+                                android:text="Rs 0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/padding_5"
+                            android:weightSum="10">
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:text="Prize amount:"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_16" />
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:id="@+id/tv_totalPrizeAmount"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_weight="4"
+                                android:text="Rs 0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/padding_5"
+                            android:weightSum="10">
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="6"
+                                android:text="To be paid:"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_16" />
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:id="@+id/tv_totalPaidAmount"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="@dimen/margin_5"
+                                android:layout_weight="4"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14" />
+
+                        </LinearLayout>
+                    </LinearLayout>-->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_15"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <Button
+                            android:id="@+id/btnRedeemNow"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginRight="@dimen/margin_15"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_background_btn"
+                            android:gravity="center"
+                            android:text="Redeem Now"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_16" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent" />
+
+                        <Button
+                            android:id="@+id/btnRedeemLater"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="@dimen/margin_15"
+                            android:layout_marginTop="@dimen/margin_10"
+                            android:layout_weight="1"
+                            android:background="@drawable/custom_background_btn"
+                            android:gravity="center"
+                            android:text="Redeem Later"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_16" />
+                    </LinearLayout>
+                    <!--   <LinearLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:layout_marginTop="@dimen/margin_10"
+                           android:background="@color/gray_bg"
+                           android:orientation="vertical">
+
+                           <Button
+                               android:id="@+id/btn_Add"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:layout_gravity="center_horizontal"
+                               android:layout_weight="1"
+                               android:background="@drawable/custom_background_btn"
+                               android:gravity="center"
+                               android:text="Add"
+                               android:textColor="@color/white"
+                               android:textSize="@dimen/text_16"  />
+                       </LinearLayout>-->
+
+                    <!-- <LinearLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:layout_marginTop="@dimen/margin_10"
+                         android:orientation="vertical">
+
+                         <com.erp.sheelafoam.sheelafoam.widget.NonScrollListView
+                             android:id="@+id/listviewOrder"
+                             android:layout_width="match_parent"
+                             android:layout_height="wrap_content" />
+                         &lt;!&ndash;  <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                               android:layout_width="wrap_content"
+                               android:layout_height="wrap_content"
+                               android:textColor="@color/black"
+                               android:textSize="25sp"
+                               android:visibility="gone"
+                               android:id="@+id/tv_noData"
+                               android:layout_centerInParent="true"
+                               android:text="There is no prize."/>&ndash;&gt;
+                         &lt;!&ndash;<com.erp.sheelafoam.utils.CustomTypefaceTextView
+                             android:id="@+id/add_item1"
+                             android:layout_width="35dp"
+                             android:layout_height="35dp"
+                             android:layout_alignParentBottom="true"
+                             android:layout_alignParentRight="true"
+                             android:layout_gravity="center_vertical|center_horizontal"
+                             android:layout_marginLeft="@dimen/margin_10"
+                             android:background="@drawable/round_text_add_item"
+                             android:gravity="center_vertical|center_horizontal"
+                             android:text="+"
+                             android:visibility="gone"
+                             android:textColor="@color/consumer_color"
+                             android:textSize="20sp"
+                             android:textStyle="bold" />&ndash;&gt;
+                     </LinearLayout>-->
+
+                </LinearLayout>
+            </ScrollView>
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+</LinearLayout>

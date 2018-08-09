@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_2">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_10"
+        android:layout_marginTop="@dimen/padding_10"
+        android:background="@color/gray_bg"
+        android:padding="@dimen/padding_2">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_5"
+                android:weightSum="10">
+
+                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Product Name:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16" />
+
+                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                    android:id="@+id/tv_valueProduct1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_weight="6"
+                    android:text="Comfort Cell Series 4.0"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Length"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Bredth"
+                    android:textColor="@color/colorBlack" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="Thickness(MM)"
+                    android:textColor="@color/colorBlack" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"
+                android:background="@drawable/mat_size_bg_inactive"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/et_valueLength1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toLeftOf="@+id/v1"
+                        android:background="@drawable/transparent_edit_bg"
+                        android:gravity="center"
+                        android:hint="--"
+                        android:ems="4"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:nextFocusForward="@+id/et_valueBredth1"
+                        android:inputType="numberDecimal"
+                        android:imeOptions="actionNext"
+                        android:longClickable="false"
+                        android:maxLength="7"
+                        android:textColor="#000000" />
+
+                    <View
+                        android:id="@+id/v1"
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#999999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:id="@+id/et_valueBredth1"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="2dp"
+                        android:layout_toLeftOf="@+id/v2"
+                        android:background="@drawable/transparent_edit_bg"
+                        android:gravity="center"
+                        android:hint="--"
+                        android:ems="4"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:nextFocusForward="@+id/et_valueThikness1"
+                        android:inputType="numberDecimal"
+                        android:imeOptions="actionNext"
+                        android:longClickable="false"
+                        android:maxLength="7"
+                        android:textColor="#000000"/>
+
+                    <View
+                        android:id="@+id/v2"
+                        android:layout_width="1dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:background="#999999" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/et_valueThikness1"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/transparent_edit_bg"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:hint="--"
+                    android:ems="4"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:nextFocusForward="@+id/et_valueThikness1"
+                    android:inputType="numberDecimal"
+                    android:imeOptions="actionNext"
+                    android:longClickable="false"
+                    android:maxLength="7"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_5"
+                android:weightSum="10">
+
+                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_5"
+                    android:layout_weight="4"
+                    android:text="QTY:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16" />
+
+
+                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                    android:id="@+id/tv_valueRemove"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginRight="@dimen/margin_10"
+                    android:background="@drawable/round_text_remove_item"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="-"
+                    android:textColor="#FF0000"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                    android:id="@+id/tv_valueQTY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/add_item"
+                    android:ellipsize="marquee"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:freezesText="true"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:scrollHorizontally="true"
+                    android:singleLine="true"
+                    android:text="0"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="@dimen/text_14" />
+
+                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                    android:id="@+id/tv_ValueAddItem"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center_vertical|center_horizontal"
+                    android:layout_marginLeft="@dimen/margin_10"
+                    android:background="@drawable/round_text_add_item"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="+"
+                    android:textColor="@color/consumer_color"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_5"
+                android:weightSum="10">
+
+                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:text="Total amount:"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_16" />
+
+                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                    android:id="@+id/tv_ValuetotalAmount"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:layout_weight="3"
+                    android:text="500"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_14" />
+
+                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                    android:id="@+id/tv_valueADD"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_5"
+                    android:padding="@dimen/padding_5"
+                    android:layout_weight="3"
+                    android:background="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="ADD"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_14" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

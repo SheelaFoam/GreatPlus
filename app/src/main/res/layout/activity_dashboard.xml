@@ -1,0 +1,302 @@
+<com.sothree.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:visibility="gone"
+    sothree:umanoDragView="@+id/dragView"
+    sothree:umanoOverlay="true"
+    sothree:umanoPanelHeight="0dp"
+    sothree:umanoParallaxOffset="0dp">
+    <!-- MAIN CONTENT -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_versionNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:padding="@dimen/padding_5"
+            android:textColor="@color/white" />
+
+        <android.support.v4.widget.NestedScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_above="@+id/tv_versionNo"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="15dp"
+                android:descendantFocusability="blocksDescendants"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/main"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/main_background"
+                    android:orientation="vertical"
+                    android:padding="@dimen/spacing_normal">
+
+                    <RelativeLayout
+                        android:id="@+id/dashboard_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="true">
+
+                        <RelativeLayout
+                            android:id="@+id/dashboard_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_15"
+                            android:visibility="visible">
+
+                            <include
+                                android:id="@+id/lyt_dashboard"
+                                layout="@layout/dashboard_menu_layout" />
+
+                            <android.support.v7.widget.CardView
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/card_view_dashBord"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/lyt_dashboard"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/margin_10"
+                                card_view:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/tv_welcome"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:padding="@dimen/padding_7"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary"
+                                    android:textSize="@dimen/small_text_size" />
+                            </android.support.v7.widget.CardView>
+                        </RelativeLayout>
+                      <!--  <RelativeLayout
+                            android:id="@+id/dashboard_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/margin_15"
+                            android:visibility="visible">
+
+                            <include
+                                android:id="@+id/lyt_dashboard"
+                                layout="@layout/dashboard_menu_layout" />
+
+                            <android.support.v7.widget.CardView
+                                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/card_view_dashBord"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/lyt_dashboard"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/margin_10"
+                                card_view:cardCornerRadius="4dp">
+
+                                <TextView
+                                    android:id="@+id/tv_gift"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="marquee"
+                                    android:fadingEdge="horizontal"
+                                    android:focusable="true"
+                                    android:focusableInTouchMode="true"
+                                    android:marqueeRepeatLimit="marquee_forever"
+                                    android:padding="@dimen/padding_7"
+                                    android:scrollHorizontally="true"
+                                    android:singleLine="true"
+                                    android:textColor="@color/colorPrimary"
+                                    android:textColorHint="@color/colorPrimary"
+                                    android:textSize="@dimen/small_text_size" />
+                            </android.support.v7.widget.CardView>
+                        </RelativeLayout>-->
+
+
+                        <RelativeLayout
+                            android:id="@+id/layout_video"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/dashboard_menu"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp">
+
+                            <FrameLayout
+                                android:id="@+id/frame_fragment"
+                                android:layout_width="match_parent"
+                                android:layout_height="200dp"/>
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/inbox_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/layout_video"
+                            android:layout_marginBottom="@dimen/margin_20"
+                            android:background="@drawable/layout_border"
+                            android:visibility="gone">
+
+                            <include layout="@layout/inbox_layout" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/my_task_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/inbox_layout"
+                            android:layout_marginBottom="@dimen/margin_20"
+                            android:background="@drawable/layout_border"
+                            android:visibility="gone">
+
+                            <include layout="@layout/my_task_layout" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/my_appointment_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/my_task_layout"
+                            android:layout_marginBottom="@dimen/margin_20"
+                            android:background="@drawable/layout_border"
+                            android:visibility="gone">
+
+                            <include layout="@layout/my_appointment_layout" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/my_performance_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/company_performance_layout"
+                            android:layout_marginBottom="@dimen/margin_20"
+                            android:background="@drawable/layout_border"
+                            android:visibility="gone">
+
+                            <include layout="@layout/my_performnce_layout" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/company_performance_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/my_appointment_layout"
+                            android:layout_marginBottom="@dimen/margin_20"
+                            android:background="@drawable/layout_border"
+                            android:visibility="gone">
+
+                            <include layout="@layout/company_performance" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/your_opinion_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/my_performance_layout"
+                            android:layout_marginBottom="@dimen/margin_20"
+                            android:background="@drawable/layout_border"
+                            android:visibility="gone">
+
+                            <include layout="@layout/your_opinion" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/upcoming_holidays_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/your_opinion_layout"
+                            android:layout_marginBottom="@dimen/margin_20"
+                            android:background="@drawable/layout_border"
+                            android:visibility="gone">
+
+                            <include layout="@layout/upcoming_holidays" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/sankalp_stories_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/upcoming_holidays_layout"
+                            android:layout_marginBottom="@dimen/margin_20"
+                            android:background="@drawable/layout_border"
+                            android:visibility="gone">
+
+                            <include layout="@layout/sankalp_layout" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/latest_events_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/sankalp_stories_layout"
+                            android:layout_marginBottom="@dimen/margin_20"
+                            android:background="@drawable/layout_border"
+                            android:visibility="gone">
+
+                            <include layout="@layout/latest_event_layout" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:id="@+id/dashboard_listing_layout"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/latest_events_layout"
+                            android:layout_marginBottom="@dimen/margin_15"
+                            android:background="@drawable/layout_border"
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:visibility="gone">
+
+                            <include layout="@layout/dashboard_listing_layout"></include>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:layout_below="@+id/dashboard_listing_layout"
+                            android:layout_marginBottom="@dimen/margin_20"
+                            android:background="@drawable/layout_border"
+                            android:visibility="invisible"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+
+    <!-- SLIDING LAYOUT -->
+    <LinearLayout
+        android:id="@+id/dragView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="false"
+        android:orientation="vertical"
+        android:rotation="180">
+
+        <include layout="@layout/facilities_request_layout" />
+    </LinearLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>
+
+

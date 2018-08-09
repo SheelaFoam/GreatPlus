@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_off_white"
+    android:paddingRight="@dimen/padding_10"
+    android:paddingLeft="@dimen/padding_10">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_color"
+        android:paddingBottom="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:weightSum="6">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_salesRepName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/padding_10"
+                android:singleLine="true"
+                android:text="Anand"
+                android:textColor="@color/red_color"
+                android:textSize="@dimen/text_12" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_salesPSpecification"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="ACTIVA - SUPPORTEC (U) (NP)"
+                android:textColor="@color/red_color"
+                android:textSize="@dimen/text_12" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_salesReportLenght"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/padding_10"
+                android:text="182"
+                android:textColor="@color/red_color"
+                android:textSize="@dimen/text_12" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_salesReportBredth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/padding_10"
+                android:text="82"
+                android:textColor="@color/red_color"
+                android:textSize="@dimen/text_12" />
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_salesReportThikness"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/padding_10"
+                android:text="01"
+                android:textColor="@color/red_color"
+                android:textSize="@dimen/text_12" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_salesReportCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/padding_10"
+                android:text="8"
+                android:textColor="@color/red_color"
+                android:textSize="@dimen/text_12" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

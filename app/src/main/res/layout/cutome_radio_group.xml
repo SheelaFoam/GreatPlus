@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.erp.sheelafoam.utils.CustomTypefaceTextView
+        android:id="@+id/tv_subTile_footfall_radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="@dimen/padding_10"
+        android:text="TITLE"
+        android:textColor="@color/black"
+        android:textSize="18dp" />
+
+    <View
+        android:id="@+id/dialog_line_footfall_radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_subTile_footfall_radioGroup"
+        android:layout_marginTop="5dp"
+        android:background="#c5c5c5" />
+
+    <ScrollView
+        android:id="@+id/radio_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_5">
+
+            <RadioGroup
+                android:id="@+id/radio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="#0a6aff"
+                android:padding="@dimen/padding_10">
+
+                <RadioButton
+                    android:id="@+id/rb_purchasedYes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:padding="@dimen/padding_5"
+                    android:visibility="gone"
+                    android:text="Yes" />
+
+                <RadioButton
+                    android:id="@+id/rb_purchasedNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="No"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_male"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:padding="@dimen/padding_5"
+                    android:text="Male"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_female"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="Female"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_ranasGender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="Trans Gender"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_ourWesite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:padding="@dimen/padding_5"
+                    android:text="Our Website"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_TV_Advertisement"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="TV Advertisement"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_Newspaper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="Newspaper"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="Others"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_brandSheelaFoam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:padding="@dimen/padding_5"
+                    android:text="Sheela Foam"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_brandSleepwell"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="Sleepwell"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_brandRubco"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="Rubco"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_brandTempurPedic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="Tempur-Pedic"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_brandDunlopillo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="Dunlopillo"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_brandMMFoam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="MM Foam"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_brandDuroflex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="Duroflex"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_brandSleepzone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="Sleepzone"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_brandKingKoil"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="King Koil"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_brandRestonic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="Restonic"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_brandNone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="None"
+                    android:visibility="gone" />
+
+                <RadioButton
+                    android:id="@+id/rb_brandOthers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5"
+                    android:text="Others"
+                    android:visibility="gone" />
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/dialog_footfall2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="5dp"
+        android:background="#c5c5c5" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_10">
+
+        <TextView
+            android:id="@+id/btn_footfall_ok_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_10"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_5"
+            android:text="OK"
+            android:textColor="#0a6aff"
+            android:textSize="@dimen/text_16" />
+
+        <TextView
+            android:id="@+id/btn_footfall_cancel_radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/btn_footfall_ok_radioGroup"
+            android:gravity="end"
+            android:paddingBottom="@dimen/padding_5"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingRight="@dimen/padding_10"
+            android:paddingTop="@dimen/padding_5"
+            android:text="CANCEL"
+            android:textColor="#0a6aff"
+            android:textSize="@dimen/text_16" />
+    </RelativeLayout>
+</LinearLayout>

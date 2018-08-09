@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/claim_background"
+    android:padding="@dimen/padding_10">
+
+
+    <LinearLayout
+        android:id="@+id/local_claim_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_background_white"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Name:"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_CFLName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="Anand Kumar"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Mobile:"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_CFLMobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="9654521365"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Date of Visit:"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_CFLDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="11-Apr-2018"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Employee:"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_CFLEmployee"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="ANAND"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Store:"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_CFLStore"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="ANAND PVT"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Gender:"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_CFLGender"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="Male"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Date of Birth:"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_CFLDateOfBirth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="15-Feb-1993"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Email:"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_CFLEmail"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="anandit@gmil.com"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="How i Heard:"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_CFLHowIH"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="Newspaper"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Purpose:"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_CFLPurpose"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="Buying mattress"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Interested In:"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_CFLInterestedIn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="7"
+                android:text="Others"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:text="CurrentMattress:"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_CFLCurrentMattress"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="5"
+                android:text="Sleepwell"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="6"
+                android:text="Ageing Of Mattress:"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14"
+                android:textStyle="bold" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_CFLAgeing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="4"
+                android:text="8"
+                android:textColor="@color/colorBlack"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

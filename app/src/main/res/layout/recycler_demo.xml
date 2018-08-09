@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/mat_size_bg_inactive" >
+
+        <ImageView
+            android:layout_marginLeft="1dp"
+            android:id="@+id/inchTape"
+            android:layout_width="12dp"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/inch_tape" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="37dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/inchTape"
+            android:padding="2dp" >
+
+            <com.wx.wheelview.widget.WheelView
+                android:id="@+id/wheelview"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true" >
+            </com.wx.wheelview.widget.WheelView>
+        </RelativeLayout>
+    </RelativeLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_15"
+    android:layout_marginLeft="@dimen/spacing_extra_tiny"
+    android:layout_marginRight="@dimen/spacing_extra_tiny"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/sankalp_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/no_img"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/spacing_normal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/sankalp_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sleepwell Business Conference"
+            android:textColor="@color/black"
+            android:textSize="@dimen/big_text_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/sankalp_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_extra_small"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="12 Aug, 2016"
+            android:textColor="@color/layout_border_color"
+            android:textSize="@dimen/text_size" />
+
+        <TextView
+            android:id="@+id/sankalp_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/spacing_extra_small"
+            android:textColor="@color/drawerBottomTextcolor"
+            android:textSize="@dimen/text_size" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sankap_divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider_bg" />
+
+</LinearLayout>

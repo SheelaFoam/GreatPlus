@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+     <dimen name="default_container_layout_padding">13.5px</dimen>
+     <dimen name="default_title_text_size">42px</dimen>
+      <dimen name="default_title_text_size_extra">54px</dimen>
+    
+    <!-- <activity_login> -->
+    
+    
+    <dimen name="login_body_padding">120px</dimen>
+    <dimen name="default_running_text_size">36px</dimen>
+      <dimen name="default_running_text_size_small">27px</dimen>
+    
+       <dimen name="default_running_text_size_small_small">22.5px</dimen>
+    <dimen name="default_value_edit_text_margine_from_up">15px</dimen>
+    <dimen name="default_layout_margine_from_up">27px</dimen>
+    <dimen name="default_inner_text_padding_very_small">15px</dimen>
+    <dimen name="login_btn_layout_margine_from_up">54px</dimen>
+    
+    
+    <!-- <activity_dashboard> -->
+    
+    <dimen name="kpi_percent_text_size">75px</dimen>
+    <dimen name="kpi_name_text_size">36px</dimen>
+    <dimen name="kpi_three_bottom_text_size">30px</dimen>
+    <dimen name="noticeboard_title_text_size">25.50px</dimen>
+    <dimen name="kpi_board_width">340.50px</dimen>
+    
+    <dimen name="kpi_board_height">480px</dimen>
+    <!-- <header> -->
+          
+          <dimen name="info_button_margine_right">30px</dimen>
+          <dimen name="info_button_margine_top">7.50px</dimen>
+          
+          
+   <!-- <changepassword> -->
+   
+   <dimen name="body_layout_margine_left">75px</dimen>
+   <dimen name="btn_save_layout_margine_top">75px</dimen>
+   
+     <!-- <profile> -->
+   <dimen name="default_text_size_small_very_extra_extra">6px</dimen>
+   <dimen name="lable_profile_user_name_text_size">52.50px</dimen>
+   <dimen name="lable_employ_type_margine_top">7.50px</dimen>
+   <dimen name="scroll_view_margine_bottom">135px</dimen>
+   <dimen name="profile_imageview_size">270px</dimen>
+   
+     <!-- <address book> -->
+     
+     <dimen name="leble_bottom_distributor_size">31.50px</dimen>
+     <dimen name="lable_botton_text_size">30px</dimen>
+     <dimen name="listview_margine_bottom">90px</dimen>
+     <dimen name="emp_type_lable_margine_left">16px</dimen>
+     <dimen name="rlayout_emp_name_margine_top">27px</dimen>
+    
+     <dimen name="llayout_margine_top">45px</dimen>
+       <dimen name="profile_img_width">210px</dimen>
+       <dimen name="profile_img_height">231px</dimen>
+       
+       
+       
+       
+          <dimen name="tour_trip_profile_img_height">75px</dimen>
+           <dimen name="tour_trip_profile_img_width">80px</dimen>
+           
+        
+           
+            <dimen name="llayout_margine_top_small_very_very">5px</dimen>
+            <dimen name="calender_item_cell_height">100px</dimen>
+            <dimen name="calender_item_cell_width">100px</dimen>
+            
+             <dimen name="calender_item_cell_height_small">80px</dimen>
+            <dimen name="calender_item_cell_width_small">80px</dimen>
+            
+            
+                <dimen name="input_width">75px</dimen>
+          <dimen name="input_height">80px</dimen>
+          
+            
+            <dimen name="dcr_list_height">669px</dimen>
+           
+             <dimen name="dtp_list_height">368px</dimen>
+             
+             
+             <dimen name="dcr_map_height">829px</dimen>
+             
+             <dimen name="product_order_text_field_width">315px</dimen>
+             <dimen name="product_order_form_container_width">618px</dimen>
+             <dimen name="product_order_measurement_box_width">188px</dimen>
+             <dimen name="home_flip_height">115px</dimen>
+        <dimen name="product_order_cross_height">64px</dimen>
+        <dimen name="report_date_filter_bg_width">195px</dimen>
+        <dimen name="report_header_padding">3.33px</dimen>
+              <dimen name="report_header_padding_extra">13.33px</dimen>
+              <dimen name="report_text_size">7dp</dimen>
+              <dimen name="icon_width">163px</dimen>
+              <dimen name="icon_height">203px</dimen>
+               <dimen name="width_qrcode_input">450px</dimen>
+               <dimen name="height_qrcode_value_lable">160px</dimen>
+                <dimen name="SheelaFoamID_ComplaintDetails_imageList_Height">700px</dimen>
+</resources> 

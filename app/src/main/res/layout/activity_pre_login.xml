@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+      android:background="@drawable/bg_new"
+      android:gravity="center"
+     >
+    
+    
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+         >
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+   
+    android:orientation="vertical" >
+     <TextView
+                 android:id="@+id/headerTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+               
+          
+                 
+              android:visibility="invisible"
+                android:text="\n\n\n\n 3LOGIN"
+              
+                android:gravity="center"
+               
+             
+          />
+  
+    <RelativeLayout
+        android:id="@+id/rlayout_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:gravity="center"
+         android:layout_gravity="center"
+        
+        
+        >
+        
+           <RelativeLayout
+               android:id="@+id/rlayout_body"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:gravity="center" >
+        
+                <RelativeLayout
+                    android:id="@+id/rlayout_logo"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:gravity="center"
+                   
+                   >
+                   <ImageView
+                       android:id="@+id/imageview_logo"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"                    
+                       android:background="@drawable/great_plus_logo"
+                      
+                      
+                       
+                       />
+                   </RelativeLayout>
+               
+        
+               
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@+id/rlayout_logo"
+                    android:gravity="center"
+                   >
+                     
+        <RelativeLayout
+            android:id="@+id/rlayout_user_id_lable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/login_btn_layout_margine_from_up"
+           
+            >
+            <TextView
+                android:id="@+id/textview_user_id_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_username_lable"
+                android:layout_centerVertical="true"
+                 android:textColor="@android:color/white"
+                 android:textSize="@dimen/default_running_text_size"
+                 
+                />
+            
+             </RelativeLayout>
+             <RelativeLayout
+                 
+                 android:id="@+id/rlayout_user_id_value"
+                  android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlayout_user_id_lable"
+                android:layout_marginTop="@dimen/default_value_edit_text_margine_from_up"
+           
+                 >
+            
+            <EditText
+                android:id="@+id/edittext_mobile_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+              
+              android:singleLine="true"
+                android:inputType="text|textNoSuggestions"
+             
+                 android:textColor="@android:color/black"
+                 android:textSize="@dimen/default_running_text_size"
+                 android:background="@drawable/textbox_large"
+                 android:paddingLeft="@dimen/default_inner_text_padding_very_small"
+                 android:paddingRight="@dimen/default_inner_text_padding_very_small"
+                 android:maxLength="25"
+                 android:longClickable="false"
+                />
+            
+            </RelativeLayout>
+            
+    
+            
+        <RelativeLayout
+            android:id="@+id/rlayout_buttons"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           
+            android:layout_below="@+id/rlayout_user_id_value"
+            android:layout_marginTop="@dimen/login_btn_layout_margine_from_up"
+            
+            >
+         
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+              
+                
+                 android:textColor="@android:color/black"
+                 android:textSize="@dimen/default_running_text_size"
+                 android:background="@drawable/btn_login"
+                />
+            
+            </RelativeLayout>
+            
+           </RelativeLayout>
+        
+        </RelativeLayout>
+        
+        </RelativeLayout>
+        
+   
+</LinearLayout>
+</ScrollView>
+   <TextView
+               android:id="@+id/footerTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+               
+          
+              android:visibility="invisible"
+                 android:text="\n\n\n\n \n\n\n3LOGIN"
+            
+                android:gravity="center"
+               
+             
+          />
+</LinearLayout>

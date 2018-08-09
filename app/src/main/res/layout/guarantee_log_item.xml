@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/margin_10"
+    android:layout_marginBottom="@dimen/margin_10"
+    android:background="@color/white"
+    android:elevation="@dimen/margin_5">
+
+    <LinearLayout
+        android:id="@+id/linear_guarantee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/gray_bg"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_2"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:orientation="vertical">
+
+                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/margin_5"
+                    android:text="Date"
+                    android:textColor="@color/darkBlueTextColor"
+                    android:textSize="16dp" />
+
+                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:background="@color/white"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/margin_5"
+                    android:text="Date"
+                    android:textColor="@color/text_color_black"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_2"
+                android:layout_weight="0.6"
+                android:orientation="vertical">
+
+                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/margin_5"
+                    android:text="Serial No."
+                    android:textColor="@color/darkBlueTextColor"
+                    android:textSize="16dp" />
+
+                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                    android:id="@+id/tv_serialNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_2"
+                    android:background="@color/white"
+                    android:maxLines="1"
+                    android:paddingLeft="@dimen/margin_5"
+                    android:text="Serial No."
+                    android:textColor="@color/text_color_black"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center"
+                android:text="Message"
+                android:textColor="@color/darkBlueTextColor"
+                android:textSize="16dp" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:text="Message"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10"
+                android:gravity="center"
+                android:text="Gift Message"
+                android:textColor="@color/darkBlueTextColor"
+                android:textSize="16dp" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_giftMsg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_5"
+                android:text="Gift Message"
+                android:textColor="@color/black"
+                android:textSize="14dp" />
+        </LinearLayout>
+
+        <!--   <View
+               android:layout_width="match_parent"
+               android:layout_height="1dp"
+               android:layout_marginTop="@dimen/margin_10"
+               android:background="@color/gray_bg" />-->
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/action_bar_search" />
+   <!-- <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">-->
+
+      <!--  <com.erp.sheelafoam.utils.CustomTypefaceTextView
+            android:id="@+id/tv_massage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:text="Massages"
+            android:padding="@dimen/padding_5"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_16" />-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+          <!--  <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_5"
+                card_view:cardCornerRadius="3dp"
+                card_view:cardElevation="4dp"
+                card_view:cardUseCompatPadding="true">-->
+
+                <RelativeLayout
+                    android:id="@+id/linearLayoutTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_5">
+
+                    <TextView
+                        android:id="@+id/tv_purchasedOrder"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:padding="@dimen/padding_5"
+                        android:text="Order Detail"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_18" />
+                    <android.support.v7.widget.CardView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="4dp"
+                        android:id="@+id/card1"
+                        card_view:cardUseCompatPadding="true">
+                    <LinearLayout
+                        android:id="@+id/linearMain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv_purchasedOrder"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_10">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/padding_2"
+                                android:weightSum="10">
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:text="Mobile Number:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_16" />
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                    android:id="@+id/tv_PMobileNumber"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/margin_5"
+                                    android:layout_weight="5"
+                                    android:text="9654521364"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_14" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/padding_2"
+                                android:weightSum="10">
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:text="Consumer Name:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_16" />
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                    android:id="@+id/tv_PConsumerName"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/margin_5"
+                                    android:layout_weight="5"
+                                    android:text="SheelaFoam"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_14" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/padding_2"
+                                android:weightSum="10">
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:text="Product Name:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_16" />
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                    android:id="@+id/tv_PProductName"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/margin_5"
+                                    android:layout_weight="5"
+                                    android:text="Comfort Cell Series 4.0"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_14" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/padding_2"
+                                android:weightSum="10">
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:text="QTY:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_16" />
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                    android:id="@+id/tv_PQTYName"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/margin_5"
+                                    android:layout_weight="5"
+                                    android:text="2"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_14" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/padding_2"
+                                android:weightSum="10">
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="5"
+                                    android:text="Size:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_16" />
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                    android:id="@+id/tv_PSizeName"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/margin_5"
+                                    android:layout_weight="5"
+                                    android:text="100MM"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_14" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                        android:id="@+id/tv_tilte"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/card1"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:gravity="center"
+                        android:text="Please click on scan barcode reader"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/text_16" />
+
+                    <View
+                        android:id="@+id/view1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/tv_tilte"
+                        android:background="@color/gray_bg" />
+                    <android.support.v7.widget.CardView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="4dp"
+                        android:layout_below="@+id/view1"
+                        android:id="@+id/card2"
+                        card_view:cardUseCompatPadding="true">
+                    <LinearLayout
+                        android:id="@+id/l1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:text="Items"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_16" />
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="QTY"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_16" />
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="Rate"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_16" />
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="Value"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_16" />
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/view3"
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:layout_below="@+id/linearMain"
+                            android:background="@color/gray_bg" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:weightSum="10">
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:gravity="center"
+                                android:text="Comfort Cell Series 4.0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14" />
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_14" />
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/text_14" />
+
+                            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="@color/colorBlack"
+                                android:textSize="@dimen/text_14" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <android.support.v7.widget.CardView
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        card_view:cardCornerRadius="3dp"
+                        card_view:cardElevation="4dp"
+                        android:layout_below="@+id/card2"
+                        android:id="@+id/card3"
+                        card_view:cardUseCompatPadding="true">
+                    <LinearLayout
+                        android:id="@+id/l2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:padding="@dimen/padding_5">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/padding_2"
+                                android:weightSum="10">
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6.5"
+                                    android:text="Reward Point Avilable:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_16" />
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                    android:id="@+id/tv_PRewardAvilable"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/margin_5"
+                                    android:layout_weight="3.5"
+                                    android:text="1000"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_14" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/padding_2"
+                                android:weightSum="10">
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6.5"
+                                    android:text="Reward Point Consumed:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_16" />
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                    android:id="@+id/tv_PRPointConsume"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/margin_5"
+                                    android:layout_weight="3.5"
+                                    android:text="500"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_14" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:padding="@dimen/padding_2"
+                                android:weightSum="10">
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="6.5"
+                                    android:text="Balance to Be Paid:"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_16" />
+
+                                <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                                    android:id="@+id/tv_PRPointPaid"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/margin_5"
+                                    android:layout_weight="3.5"
+                                    android:text="500"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/text_14" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/card3"
+                        android:layout_marginTop="@dimen/margin_10">
+
+                        <Button
+                            android:id="@+id/btnPlaceOrder"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:background="@color/colorPrimary"
+                            android:gravity="center"
+                            android:padding="@dimen/padding_10"
+                            android:text="Place order"
+                            android:textColor="@color/white" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+           <!-- </android.support.v7.widget.CardView>-->
+        </LinearLayout>
+   <!-- </RelativeLayout>-->
+</LinearLayout>
+
+

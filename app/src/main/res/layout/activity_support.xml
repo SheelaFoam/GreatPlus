@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+     android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_toolbar">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/app_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/header_background"
+                android:elevation="4dp"
+                android:theme="@style/Toolbar_Theme"
+                android:minHeight="?attr/actionBarSize"
+                >
+
+                <LinearLayout
+                    android:id="@+id/app_toolbar_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/app_toolbar_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Title"
+                        android:ellipsize="end"
+                        android:textAllCaps="true"
+                        android:maxLines="1"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/big_text_size"
+                        />
+                </LinearLayout>
+
+            </android.support.v7.widget.Toolbar>
+        </android.support.design.widget.AppBarLayout>
+    </RelativeLayout>
+
+  
+        
+   <RelativeLayout
+        android:layout_below="@+id/layout_toolbar"
+        android:id="@+id/llayout_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="20dp"
+       android:layout_marginRight="20dp"
+        android:padding="@dimen/default_container_layout_padding"
+        >
+        
+      <!--<RelativeLayout
+        android:id="@+id/rlayout_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/header_background"
+       >
+
+
+
+        <TextView
+            android:id="@+id/textview_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="greatplus employee app"
+           android:layout_centerHorizontal="true"
+	       android:layout_centerVertical="true"
+          android:layout_marginLeft="@dimen/default_inner_text_padding_very_small"
+            android:textSize="@dimen/default_running_text_size"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            />
+
+             <ImageButton
+            android:id="@+id/btn_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_info"
+           
+            android:layout_toLeftOf="@+id/btn_logout"
+            android:layout_marginRight="@dimen/info_button_margine_right"
+           
+            android:visibility="gone"
+            />
+             
+              <TextView
+	                android:id="@+id/textview_user_id"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	               
+	                android:layout_centerHorizontal="true"
+	              	android:layout_centerVertical="true"
+	              	android:textColor="@android:color/white"
+	              	android:textSize="@dimen/default_running_text_size"
+	              	  android:layout_toLeftOf="@+id/btn_logout"
+            android:layout_marginRight="@dimen/info_button_margine_right"
+	                />
+        
+        <ImageButton
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_logout"
+           android:layout_marginRight="@dimen/info_button_margine_right"
+            
+        
+           />
+ 
+    </RelativeLayout> -->
+        
+          
+         <LinearLayout
+        
+        android:id="@+id/llayout_timing"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:layout_marginTop="20dp"
+        >
+          
+        <RelativeLayout
+            android:id="@+id/rlayout_clock_lable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/imageview_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_clock"
+                
+                />
+            
+            <TextView
+                android:id="@+id/textview_timing_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lable_timing"
+                android:layout_toRightOf="@+id/imageview_clock"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/default_running_text_size"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/default_container_layout_padding"
+                />
+            </RelativeLayout>
+            
+        
+        <RelativeLayout
+            android:id="@+id/rlayout_timing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_container_layout_padding"
+            
+            >
+            
+            
+            <TextView
+                android:id="@+id/textview_timing_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"                
+                android:text="10 AM To 7:30 PM"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/default_title_text_size"
+                android:textStyle="bold"
+                
+                />
+            
+            <TextView
+                android:id="@+id/textview_timing_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textview_timing_one"
+                
+                android:text="MON-FRI 9:00 AM-6:00 PM"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/default_title_text_size"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/default_layout_margine_from_up"
+                android:visibility="gone"
+                />
+            </RelativeLayout>
+        
+        
+        </LinearLayout>
+        
+          <LinearLayout
+        
+        android:id="@+id/llayout_toll_free_no"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+       android:layout_below="@+id/llayout_timing"
+        android:gravity="center"
+
+        android:layout_marginTop="@dimen/llayout_margine_top"
+       
+        
+        >
+          
+         <RelativeLayout
+            android:id="@+id/rlayout_tollfree_no_lable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/imageview_tollfree_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_headphone"
+                
+                />
+            
+            <TextView
+                android:id="@+id/textview_tollfree_no_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lable_tollfree_no"
+                android:layout_toRightOf="@+id/imageview_tollfree_no"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/default_running_text_size"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/default_container_layout_padding"
+                />
+            </RelativeLayout>
+            
+        
+        <RelativeLayout
+            android:id="@+id/rlayout_tollfree_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_container_layout_padding"
+            
+            >
+            
+            
+            <TextView
+                android:id="@+id/textview_tollfree_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="18001036664"
+             
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/default_title_text_size"
+                android:textStyle="bold"
+                
+                />
+
+            <TextView
+                android:id="@+id/textview_tollfree_no1"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/textview_tollfree_no"
+                android:layout_height="wrap_content"
+                android:text="1800112266"
+
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/default_title_text_size"
+                android:textStyle="bold"
+
+                />
+            
+            
+            </RelativeLayout>
+        
+        
+        </LinearLayout>
+        
+          
+           <LinearLayout
+        
+        android:id="@+id/llayout_cc_email"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/llayout_toll_free_no"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/llayout_margine_top"
+        
+        >
+          
+         <RelativeLayout
+            android:id="@+id/rlayout_cc_email_lable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            >
+            <ImageView
+                android:id="@+id/imageview_cc_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_support"
+                
+                />
+            
+            <TextView
+                android:id="@+id/textview_cc_email_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lable_cc_email"
+                android:layout_toRightOf="@+id/imageview_cc_email"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/default_running_text_size"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/default_container_layout_padding"
+                />
+            </RelativeLayout>
+            
+        
+        <RelativeLayout
+            android:id="@+id/rlayout_cc_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_container_layout_padding"
+            
+            >
+            
+            
+            <TextView
+                android:id="@+id/textview_cc_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/default_title_text_size"
+                android:textStyle="bold"
+                
+                />
+            
+            
+            </RelativeLayout>
+        
+        
+        </LinearLayout>
+        
+           
+	<!-- changes made on 16/7/15 -->           
+       
+       <LinearLayout
+        
+        android:id="@+id/llayout_cc_direct_no"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/llayout_cc_email"
+        android:gravity="center"
+        
+        android:visibility="visible"
+        
+        android:layout_marginTop="@dimen/llayout_margine_top"
+        
+        >
+          
+         <RelativeLayout
+            android:id="@+id/rlayout_cc_direct_no_lable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:id="@+id/imageview_cc_direct_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_changepassword"
+                
+                
+                />
+            
+            <TextView
+                android:id="@+id/textview_cc_direct_no_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/change_password"
+                android:layout_toRightOf="@+id/imageview_cc_direct_no"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/default_running_text_size"
+                android:layout_marginLeft="@dimen/default_container_layout_padding"
+                android:layout_centerVertical="true"
+                />
+            </RelativeLayout>
+            
+        
+        <RelativeLayout
+            android:id="@+id/rlayout_cc_direct_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_container_layout_padding"
+            android:visibility="gone"
+            
+            >
+            
+            
+            <TextView
+                android:id="@+id/textview_direct_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/default_title_text_size"
+                android:textStyle="bold"
+                
+                />
+            
+            
+            </RelativeLayout>
+        
+        
+        
+        </LinearLayout>
+        
+               
+            
+        
+        
+        </RelativeLayout>
+      
+        
+    <!-- changes made on 16/7/15. visibility="gone" -->
+    
+    <LinearLayout
+        
+        android:id="@+id/llayout_helpline"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:background="#00003D"
+       
+       android:visibility="gone"
+       
+        android:layout_alignParentBottom="true"
+       
+        >
+          
+            
+        <RelativeLayout
+            android:id="@+id/rlayout_helpline_lable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            >
+            
+            
+            <TextView
+                android:id="@+id/textview_helpline_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lable_helpline"
+                
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/default_running_text_size"
+                android:layout_marginLeft="@dimen/default_container_layout_padding"
+                />
+            </RelativeLayout>
+            
+        
+        <RelativeLayout
+            android:id="@+id/rlayout_tollfree_no_it"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_layout_margine_from_up"
+            android:gravity="center"
+            
+            >
+            
+            
+            <TextView
+                android:id="@+id/textview_tollfree_no_it_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:text="@string/lable_tollfree_no_it"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/lable_botton_text_size"
+               
+                
+                />
+            
+            <TextView
+                android:id="@+id/textview_tollfree_no_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textview_tollfree_no_it_lable"
+                
+                android:text="1800 90 83980"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/lable_botton_text_size"
+                
+               
+                
+                />
+            </RelativeLayout>
+            
+          <RelativeLayout
+            android:id="@+id/rlayout_direct_no_it"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_layout_margine_from_up"
+            android:gravity="center"
+            
+            >
+            
+            
+            <TextView
+                android:id="@+id/textview_direct_no_it_lable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                
+                android:text="@string/lable_cc_direct_number_it"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/lable_botton_text_size"
+               
+                
+                />
+            
+            <TextView
+                android:id="@+id/textview_direct_no_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textview_direct_no_it_lable"
+                
+                android:text="1800 36748784"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/lable_botton_text_size"
+                
+               
+                
+                />
+            </RelativeLayout>
+        
+        
+        </LinearLayout>
+</RelativeLayout>

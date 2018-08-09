@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D3D3D3"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/actionBar"
+        layout="@layout/actionbar_new" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/padding_10"
+        android:layout_marginLeft="@dimen/padding_10"
+        android:layout_marginRight="@dimen/padding_10"
+        android:layout_marginTop="@dimen/padding_10"
+        android:background="@color/gray_bg"
+        android:padding="@dimen/padding_2">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/padding_10"
+                        android:paddingRight="@dimen/padding_10">
+                        <LinearLayout
+                            android:id="@+id/BundleLayout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/et_mobileProduct"
+                                android:layout_width="@dimen/width_qrcode_input"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/input_full_bg_new"
+                                android:gravity="center_vertical"
+                                android:hint="Mobile"
+                                android:inputType="number"
+                                android:maxLength="10"
+                                android:maxLines="1"
+                                android:paddingLeft="@dimen/default_inner_text_padding_very_small"
+                                android:paddingRight="@dimen/default_inner_text_padding_very_small"
+                                android:textColor="@android:color/black"
+                                android:textCursorDrawable="@null"
+                                android:textSize="@dimen/default_running_text_size_small"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/btnBundle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="@dimen/default_value_edit_text_margine_from_up"
+                                android:layout_weight="30"
+                                android:background="#03A14D"
+                                android:gravity="center"
+                                android:text="Search"
+                                android:textColor="@android:color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/padding_10"
+                        android:paddingRight="@dimen/padding_10">
+
+                        <EditText
+                            android:id="@+id/et_nameProduct"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/default_running_text_size"
+                            android:background="@drawable/input_full_bg_new"
+                            android:gravity="center_vertical"
+                            android:hint="Name*"
+                            android:inputType="textEmailAddress"
+                            android:longClickable="false"
+                            android:paddingLeft="@dimen/default_inner_text_padding_very_small"
+                            android:paddingRight="@dimen/default_inner_text_padding_very_small"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@color/foot_text_gray"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/text_14"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_10"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/padding_10"
+                        android:paddingRight="@dimen/padding_10">
+
+                        <EditText
+                            android:id="@+id/et_emailProduct"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/default_running_text_size"
+                            android:background="@drawable/input_full_bg_new"
+                            android:gravity="center_vertical"
+                            android:hint="Email Id *"
+                            android:inputType="textEmailAddress"
+                            android:longClickable="false"
+                            android:paddingLeft="@dimen/default_inner_text_padding_very_small"
+                            android:paddingRight="@dimen/default_inner_text_padding_very_small"
+                            android:singleLine="true"
+                            android:textColor="@android:color/black"
+                            android:textColorHint="@color/foot_text_gray"
+                            android:textCursorDrawable="@null"
+                            android:textSize="@dimen/text_14"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+<ListView
+    android:id="@+id/listview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_10"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/padding_5"
+                        android:weightSum="10">
+
+                        <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="Total Price:"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/text_14"
+                            android:textStyle="bold" />
+
+                        <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                            android:id="@+id/tv_productPrice"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/margin_5"
+                            android:layout_weight="6"
+                            android:text="RS: 500"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/text_14" />
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_20"
+                        android:orientation="vertical"
+                        android:paddingLeft="@dimen/padding_10"
+                        android:paddingRight="@dimen/padding_10">
+
+                        <Button
+                            android:id="@+id/btn_submit_customerFeedback"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:background="#03A14D"
+                            android:text="NEXT"
+                            android:textAllCaps="false"
+                            android:textColor="#ffffff" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

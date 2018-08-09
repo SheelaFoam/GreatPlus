@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_dialog_title"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_10"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="The Customer mobile no (9654521364) has already order with below information details"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+   <!-- <LinearLayout
+        android:id="@+id/rl_dialog_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_title"
+        android:orientation="horizontal"
+        android:padding="@dimen/padding_10">
+
+        <TextView
+            android:id="@+id/tv_massageDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="Do You want to Place Order?"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>-->
+    <LinearLayout
+        android:id="@+id/linearItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialog_title"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Product Name:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_productPreOrderName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="Comfort Cell-Series 1.0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Size:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_productPreOrderSize"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="72(L) 36(B) 150(T)"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="QTY:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_productPreOrderQTY"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="MRP:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_productPreOrderMrp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="5000"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Cash Reward:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_productPreOrderCashReward"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="500"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:visibility="gone"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Advance:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_productPreOrderAdavance"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="1000"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/linearPaid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/padding_5"
+            android:weightSum="10">
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:text="Amount To Be Paid:"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_16" />
+
+            <com.erp.sheelafoam.utils.CustomTypefaceTextView
+                android:id="@+id/tv_productPreOrderPaid"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_5"
+                android:layout_weight="6"
+                android:text="3500"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_14" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/dialog_line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/linearItem"
+        android:layout_marginTop="5dp"
+        android:background="#c5c5c5" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearItem"
+        android:weightSum="2"
+        android:orientation="horizontal">
+      <!--  <TextView
+            android:id="@+id/btn_canceDilog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:text="Cancel"
+            android:textColor="#0a6aff"
+            android:textSize="@dimen/text_16" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_dialog_content"
+            android:background="#c5c5c5" />-->
+        <TextView
+            android:id="@+id/btn_okDialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/dialog_line2"
+            android:gravity="center"
+            android:padding="@dimen/padding_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:text="OK"
+            android:textColor="#0a6aff"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_16" />
+    </LinearLayout>
+</RelativeLayout>
